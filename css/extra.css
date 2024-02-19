@@ -1,0 +1,12 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+/* 图片居中 */
+
+.katex {
+    font-size: 1.25em;
+    text-indent: 0;
+    text-rendering: auto;
+}
