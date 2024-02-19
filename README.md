@@ -1,2 +1,2 @@
-# xzqbear-blogs
-xzqbear's personal blogs
+# xzqbear-math-notes
+xzqbear's blogs deployed by mkdocs.

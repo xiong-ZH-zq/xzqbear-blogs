@@ -1,0 +1,74 @@
+site_name: xzqbear blogs
+repo_url: https://github.com/xiong-ZH-zq/xzqbear-blogs
+repo_name: xzqbear-blogs
+theme:
+  language: zh
+  name: material
+  custom_dir: overrides
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+      primary: cyan
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: blue grey
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+  font:
+    text: PT Serif
+  icon:
+    admonition:    # change icon of admonition
+      example: octicons/telescope-16
+
+markdown_extensions:
+  - meta
+  - nl2br
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tilde
+  - pymdownx.arithmatex:
+        generic: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - md_in_html    # image configuration
+        
+plugins:
+  - search
+  - callouts    # transform obsidian callout to material admonition
+  - glightbox
+  - tags
+  - blog:
+      enabled: true
+      blog_dir: ./blog 
+      blog_toc: true
+      post_date_format: full
+      post_dir: "{blog}/articles"
+      categories: true
+      categories_name: Categories
+      archive_name: "按年份归类"
+      post_readtime_words_per_minute: 220
+      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+extra_javascript:
+  - javascripts/config.js 
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
+  - css/extra.css
+extra: 
+  attachments: "imgs"
