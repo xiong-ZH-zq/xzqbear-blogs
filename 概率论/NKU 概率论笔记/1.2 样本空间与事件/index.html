@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../../19/havard-stat-110-lecture-3/">
+        <link rel="prev" href="../1.1%20%E9%9A%8F%E6%9C%BA%E7%8E%B0%E8%B1%A1%E4%B8%8E%E7%BB%9F%E8%AE%A1%E8%A7%84%E5%BE%8B%E6%80%A7/">
       
       
-        <link rel="next" href="../../25/ubuntu-%E7%94%9F%E5%AD%98%E6%97%A5%E8%AE%B0/">
+        <link rel="next" href="../1.3%20%E5%8F%A4%E5%85%B8%E6%A6%82%E5%9E%8B/">
       
       
-      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
     
     
       
-        <title>Havard Stat 101 Lecture 4 - Conditional Probability - xzqbear blogs</title>
+        <title>样本空间与事件 - xzqbear blogs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -56,16 +56,16 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
     
-      <link rel="stylesheet" href="../../../../../css/extra.css">
+      <link rel="stylesheet" href="../../../css/extra.css">
     
-    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -74,7 +74,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#havard-stat-101-lecture-4-conditional-probability" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -109,7 +109,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../../../.." title="xzqbear blogs" class="md-header__button md-logo" aria-label="xzqbear blogs" data-md-component="logo">
+    <a href="../../.." title="xzqbear blogs" class="md-header__button md-logo" aria-label="xzqbear blogs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -129,7 +129,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Havard Stat 101 Lecture 4 - Conditional Probability
+              样本空间与事件
             
           </span>
         </div>
@@ -230,7 +230,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -245,13 +245,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -275,7 +273,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/NKU%20%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E4%BD%9C%E4%B8%9A%E6%80%BB%E7%BB%93/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/" class="md-tabs__link">
+        <a href="../../../%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/NKU%20%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E4%BD%9C%E4%B8%9A%E6%80%BB%E7%BB%93/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/" class="md-tabs__link">
           
   
   实变函数
@@ -292,17 +290,21 @@
         
   
   
+    
+  
   
     
     
       
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../../%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/1.1%20%E9%9A%8F%E6%9C%BA%E7%8E%B0%E8%B1%A1%E4%B8%8E%E7%BB%9F%E8%AE%A1%E8%A7%84%E5%BE%8B%E6%80%A7/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../1.1%20%E9%9A%8F%E6%9C%BA%E7%8E%B0%E8%B1%A1%E4%B8%8E%E7%BB%9F%E8%AE%A1%E8%A7%84%E5%BE%8B%E6%80%A7/" class="md-tabs__link">
           
   
   概率论
@@ -333,9 +335,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -346,7 +346,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../.." title="xzqbear blogs" class="md-nav__button md-logo" aria-label="xzqbear blogs" data-md-component="logo">
+    <a href="../../.." title="xzqbear blogs" class="md-nav__button md-logo" aria-label="xzqbear blogs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -376,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -393,28 +393,25 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -425,7 +422,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -436,14 +433,12 @@
                 
   
   
-    
-  
   
     
   
   
-    <li class="md-nav__item md-nav__item--active">
-      <a href="../../../../" class="md-nav__link">
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -506,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../archive/2024/" class="md-nav__link">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -622,7 +617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/NKU%20%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E4%BD%9C%E4%B8%9A%E6%80%BB%E7%BB%93/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/" class="md-nav__link">
+      <a href="../../../%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/NKU%20%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E4%BD%9C%E4%B8%9A%E6%80%BB%E7%BB%93/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -655,25 +650,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -684,7 +682,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             概率论
@@ -695,8 +693,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -704,13 +704,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
         
           
           <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
@@ -724,7 +722,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
             NKU 概率论笔记
@@ -738,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/1.1%20%E9%9A%8F%E6%9C%BA%E7%8E%B0%E8%B1%A1%E4%B8%8E%E7%BB%9F%E8%AE%A1%E8%A7%84%E5%BE%8B%E6%80%A7/" class="md-nav__link">
+      <a href="../1.1%20%E9%9A%8F%E6%9C%BA%E7%8E%B0%E8%B1%A1%E4%B8%8E%E7%BB%9F%E8%AE%A1%E8%A7%84%E5%BE%8B%E6%80%A7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -756,10 +754,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/1.2%20%E6%A0%B7%E6%9C%AC%E7%A9%BA%E9%97%B4%E4%B8%8E%E4%BA%8B%E4%BB%B6/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    样本空间与事件
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -768,6 +786,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      样本空间
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      事件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      事件的运算
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="事件的运算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      包含关系
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      交并运算
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-morgan" class="md-nav__link">
+    <span class="md-ellipsis">
+      De Morgan律
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      运算律
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      有限样本空间
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -780,7 +896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/1.3%20%E5%8F%A4%E5%85%B8%E6%A6%82%E5%9E%8B/" class="md-nav__link">
+      <a href="../1.3%20%E5%8F%A4%E5%85%B8%E6%A6%82%E5%9E%8B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -817,8 +933,6 @@
             
             
               
-                
-              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -838,27 +952,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#independence" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Independence
+      样本空间
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#newton-pepys-problem-1693" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Newton-Pepys Problem (1693)
+      事件
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conditional-probability" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      Conditional Probability
+      事件的运算
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="事件的运算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      包含关系
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      交并运算
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-morgan" class="md-nav__link">
+    <span class="md-ellipsis">
+      De Morgan律
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      运算律
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      有限样本空间
     </span>
   </a>
   
@@ -873,150 +1038,100 @@
             
           
           
-  <div class="md-content md-content--post" data-md-component="content">
-    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
-      <div class="md-sidebar__scrollwrap">
-        <div class="md-sidebar__inner md-post">
-          <nav class="md-nav md-nav--primary">
-            <div class="md-post__back">
-              <div class="md-nav__title md-nav__container">
-                <a href="../../../../" class="md-nav__link">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-                  <span class="md-ellipsis">
-                    回到主页
-                  </span>
-                </a>
-              </div>
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="_1">样本空间与事件</h1>
+<h2 id="_2">样本空间</h2>
+<div class="admonition note">
+<p class="admonition-title">定义：样本空间和样本点</p>
+<p>研究随机试验需要知道可能出现的结果，这些结果称为<strong>样本点</strong>，一般用 <span class="arithmatex">\(\omega\)</span> 表示，样本点全体构成<strong>样本空间</strong>，用 <span class="arithmatex">\(\varOmega\)</span> 表示。</p>
+</div>
+<p>例如：研究英文字母的使用情况就要把样本点选为：</p>
+<div class="arithmatex">\[
+\varOmega = \left\lbrace A,B,C,\cdots, Z \right\rbrace
+\]</div>
+<p>总共26个样本点.</p>
+<h2 id="_3">事件</h2>
+<p>李贤平概率论当中对集合的定义为：给定任何一个点 <span class="arithmatex">\(\omega\)</span> 都可以确认其属不属于 <span class="arithmatex">\(S\)</span> ，如果是则记为 <span class="arithmatex">\(\omega\in S\)</span> ，如果不是则记为 <span class="arithmatex">\(\omega\not\in S\)</span> . 不包含任何点的集合为空集，记为 <span class="arithmatex">\(\varnothing\)</span> .</p>
+<div class="admonition note">
+<p class="admonition-title">定义：事件</p>
+<p>我们把事件定义为<strong>样本点的某个集合</strong>，称某事件发生当且仅当<strong>它所包含的某个样本点出现</strong>.</p>
+</div>
+<p>因此我们可以改写必然事件和不可能事件的定义，这里略过。</p>
+<h2 id="_4">事件的运算</h2>
+<h3 id="_5">包含关系</h3>
+<p>若 <span class="arithmatex">\(A\)</span> 的每一个样本点都包含在 <span class="arithmatex">\(B\)</span> 当中，则记为 <span class="arithmatex">\(A\subset B\)</span> ，并称 <span class="arithmatex">\(A\)</span> <strong>被包含</strong>于 <span class="arithmatex">\(B\)</span> . </p>
+<p>如果 <span class="arithmatex">\(A \subset B\)</span> 和 <span class="arithmatex">\(B \subset A\)</span> 同时成立，则称 <span class="arithmatex">\(A\)</span> 和 <span class="arithmatex">\(B\)</span> <strong>等价</strong>，或者相等，记为 <span class="arithmatex">\(A=B\)</span> ，等价的事件总是同时发生.</p>
+<div class="admonition note">
+<p class="admonition-title">定义：逆事件、对立事件</p>
+<p>对于事件 <span class="arithmatex">\(A\)</span> ，由所有不包含在 <span class="arithmatex">\(A\)</span> 中的样本点所组成的事件称为 <span class="arithmatex">\(A\)</span> 的<strong>逆事件</strong>，或称 <span class="arithmatex">\(A\)</span> 的<strong>对立事件</strong>，记为 <span class="arithmatex">\(\overline{A}\)</span> . <span class="arithmatex">\(\overline{A}\)</span> 发生表示 <span class="arithmatex">\(A\)</span> 不发生.</p>
+</div>
+<h3 id="_6">交并运算</h3>
+<p><span class="arithmatex">\(A \cap B\)</span> 或 <span class="arithmatex">\(AB\)</span> 表示同时属于 <span class="arithmatex">\(A\)</span> 和 <span class="arithmatex">\(B\)</span> 的样本点的集合，称它为 <span class="arithmatex">\(A\)</span> 和 <span class="arithmatex">\(B\)</span> 的交，<span class="arithmatex">\(AB\)</span> 表示两个事件<strong>同时发生</strong>. 如果 <span class="arithmatex">\(AB= \varnothing\)</span> ，那么称两个事件<strong>互不相容</strong>.<br />
+相应的 <span class="arithmatex">\(A\cup B\)</span> 表示两个事件<strong>至少发生一个</strong>. </p>
+<div class="admonition note">
+<p class="admonition-title">定义：事件的和</p>
+<p>对于<strong>互不相容</strong>的两个事件 <span class="arithmatex">\(A\)</span> 和 <span class="arithmatex">\(B\)</span> ，我们称它们的<strong>并</strong>为<strong>和</strong>. 记为 <span class="arithmatex">\(A+B\)</span> .</p>
+</div>
+<p>用 <span class="arithmatex">\(A-B\)</span> 表示在 <span class="arithmatex">\(A\)</span> 中不在 <span class="arithmatex">\(B\)</span> 中的样本点全体，称为<strong>差</strong>，此时 <span class="arithmatex">\(A\)</span> 发生而 <span class="arithmatex">\(B\)</span> 不发生.</p>
+<h3 id="de-morgan">De Morgan律</h3>
+<div class="admonition note">
+<p class="admonition-title">定理：对偶原理</p>
+<p><span class="arithmatex">\(\overline{A\cup B}  = \overline{A}\cap \overline{B}\)</span> ， <span class="arithmatex">\(\overline{A\cap B} = \overline{A}\cup \overline{B}\)</span>.</p>
+</div>
+<p>差可以用交和并表示：</p>
+<div class="arithmatex">\[
+A-B = A\cap \overline{B}
+\]</div>
+<p>对于可列个事件，对偶原理仍然成立，且定义运算符如下：</p>
+<div class="arithmatex">\[
+\bigcup_{i=1}^\infty A_i = \lim_{n\to \infty}\bigcup_{i=1}^n A_i,\quad \bigcap_{i=1}^\infty A_i = \lim_{n\to \infty}\bigcap_{i=1}^n A_i
+\]</div>
+<h3 id="_7">运算律</h3>
+<ul>
+<li>交换律： <span class="arithmatex">\(A\cup B=B\cup A\)</span> ，<span class="arithmatex">\(AB=BA\)</span>；</li>
+<li>结合律；</li>
+<li>分配律： <span class="arithmatex">\((A\cup B)\cap C=AC\cup BC\)</span> .</li>
+</ul>
+<h2 id="_8">有限样本空间</h2>
+<div class="admonition note">
+<p class="admonition-title">定义：有限样本空间</p>
+<p>只有有限个样本点的样本空间称为<strong>有限样本空间</strong>.</p>
+</div>
+<p>设 <span class="arithmatex">\(\varOmega\)</span> 为有限样本空间，其样本点为 <span class="arithmatex">\(\omega_1,\omega_2,\cdots,\omega_n\)</span> ，在这种场合可以把 <span class="arithmatex">\(\varOmega\)</span> 的任何子集都当作事件，此时给定一个数与它对应，此数称为<strong>概率</strong>，记为 <span class="arithmatex">\(P(\omega_i)\)</span> ，它是非负的，满足</p>
+<div class="arithmatex">\[
+\sum\limits_{i=1}^n P(\omega_i)=1
+\]</div>
+<p>此时就定义了<strong>概率</strong>，注意，此时还未明确概率模型，因此仅仅只能把它当作一个对应的数看待。</p>
+<div class="admonition note">
+<p class="admonition-title">定义：事件的概率</p>
+<p>任何事件 <span class="arithmatex">\(A\)</span> 的概率 <span class="arithmatex">\(P(A)\)</span> 是 <span class="arithmatex">\(A\)</span> 中各样本点的概率之和.</p>
+</div>
+<p>因此，对于事件的概率有 <span class="arithmatex">\(0\leqslant P(A)\leqslant1\)</span> .</p>
+<p>这个定义同样可以推广到可列个样本点的样本空间，这个空间被称为<strong>离散样本空间</strong>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
             </div>
-            
-            <ul class="md-post__meta md-nav__list">
-              <li class="md-nav__item md-nav__item--section">
-                <div class="md-post__title">
-                  <span class="md-ellipsis">
-                    元数据
-                  </span>
-                </div>
-                <nav class="md-nav">
-                  <ul class="md-nav__list">
-                    <li class="md-nav__item">
-                      <div class="md-nav__link">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5Z"/></svg>
-                        <time datetime="2024-02-20 00:00:00" class="md-ellipsis">2024年2月20日星期二</time>
-                      </div>
-                    </li>
-                    
-                    
-                    
-                      
-                      <li class="md-nav__item">
-                        <div class="md-nav__link">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5Z"/></svg>
-                          <span class="md-ellipsis">
-                            
-                              需要 1 分钟阅读时间
-                            
-                          </span>
-                        </div>
-                      </li>
-                    
-                  </ul>
-                </nav>
-              </li>
-            </ul>
-          </nav>
           
-        </div>
-      </div>
-    </div>
-    <article class="md-content__inner md-typeset">
-      
-        
-  
-  
-
-<nav class="md-tags" >
-  
-    
-    
-    
-      <span class="md-tag">Probability Theory</span>
-    
-  
-</nav>
-
-
-  
-  
-
-
-<h1 id="havard-stat-101-lecture-4-conditional-probability">Havard Stat 101 Lecture 4 - Conditional Probability</h1>
-<h2 id="independence">Independence</h2>
-<p><a href="https://www.youtube.com/watch?v=P7NE4WF8j-Q#t=649.6844439732971">10:49</a> </p>
-<div class="admonition note">
-<p class="admonition-title">Definition: Independence</p>
-<p>Events <span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(B\)</span> are independent if <span class="arithmatex">\(P(A\cap B) = P(A)P(B)\)</span> .</p>
-</div>
-<!-- more -->
-
-<div class="admonition danger">
-<p class="admonition-title">Note</p>
-<p>It is completely different from disjointness.</p>
-</div>
-<p><span class="arithmatex">\(A,B,C\)</span> are independent if</p>
-<div class="arithmatex">\[
-\begin{aligned}
-&amp;P(AB) = P(A)P(B), \\
-&amp;P(BC) = P(B)P(C), \\
-&amp;P(AC) = P(A)P(C), \\
-&amp;P(ABC) = P(A)P(B)P(C).
-\end{aligned}
-\]</div>
-<p>Similarly for events <span class="arithmatex">\(A_1,A_2,\cdots,A_n\)</span> , means all multiply rules hold.</p>
-<h2 id="newton-pepys-problem-1693">Newton-Pepys Problem (1693)</h2>
-<p><a href="https://www.youtube.com/watch?v=P7NE4WF8j-Q#t=1102.50909">18:22</a><br />
-We have a fair dice, which is most likely below?</p>
-<ol>
-<li>A. At least one <span class="arithmatex">\(6\)</span> with <span class="arithmatex">\(6\)</span> dices;</li>
-<li>B. At least two <span class="arithmatex">\(6\)</span> with <span class="arithmatex">\(12\)</span> dices;</li>
-<li>C. At least three <span class="arithmatex">\(6\)</span> with <span class="arithmatex">\(18\)</span> dices;</li>
-</ol>
-<p>The answer is A. Here is the calculation:</p>
-<div class="arithmatex">\[
-P(A) = 1-\left(\frac{5}{6}\right)^6 \approx 0.665
-\]</div>
-<div class="arithmatex">\[
-P(B) = 1-\left(\frac{5}{6}\right)^{12} - 12\left(\frac{5}{6}\right)^{11} \frac{1}{6}\approx 0.619
-\]</div>
-<div class="arithmatex">\[
-P(C) = 1- \sum\limits_{k=0}^2 \binom{18}{k}\left( \frac{1}{6}\right)^k \left(\frac{5}{6}\right)^{18-k} \approx 0.597
-\]</div>
-<h2 id="conditional-probability">Conditional Probability</h2>
-<p><a href="https://www.youtube.com/watch?v=P7NE4WF8j-Q#t=1955.8446588817444">32:35</a> </p>
-<div class="admonition note">
-<p class="admonition-title">Definition: Conditional Probability</p>
-<div class="arithmatex">\[P(A|B) = \dfrac{P(A\cap B)}{P(B)}\]</div>
-</div>
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-      
-    </article>
-  </div>
-
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -1047,12 +1162,12 @@ P(C) = 1- \sum\limits_{k=0}^2 \binom{18}{k}\left( \frac{1}{6}\right)^k \left(\fr
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.expand"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
-        <script src="../../../../../javascripts/config.js"></script>
+        <script src="../../../javascripts/config.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
       
