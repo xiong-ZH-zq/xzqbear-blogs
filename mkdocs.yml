@@ -49,6 +49,7 @@ plugins:
   - callouts    # transform obsidian callout to material admonition
   - glightbox
   - tags
+  - ezlinks
   - blog:
       enabled: true
       blog_dir: ./blog 
