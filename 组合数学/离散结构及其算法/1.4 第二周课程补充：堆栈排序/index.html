@@ -1093,6 +1093,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      算法分析与证明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="算法分析与证明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      一次排序能成功的条件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1161,6 +1185,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      算法分析与证明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="算法分析与证明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      一次排序能成功的条件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1198,12 +1246,11 @@
 <li>最后，没有元素将要入栈时，将所有栈内的元素依次弹出.</li>
 </ol>
 <h2 id="_3">模拟程序代码</h2>
-<p>下面给出模拟堆栈排序的 Python 程序代码，为保持兼容性，仅使用官方标准库.</p>
+<p>下面给出堆栈排序的一个程序模拟代码，基本兼容最新版相关配置.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python</label><label for="__tabbed_1_2">MATLAB</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="c1"># 堆栈排序</span>
-<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">permutations</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">permutations</span>
 
 <span class="k">def</span> <span class="nf">if_sorted</span><span class="p">(</span><span class="n">t</span><span class="p">:</span><span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
     <span class="c1"># 检验是否排列成功</span>
@@ -1213,33 +1260,44 @@
     <span class="k">return</span> <span class="kc">True</span>
 
 
-<span class="k">def</span> <span class="nf">stack_sorting</span><span class="p">(</span><span class="n">t</span><span class="p">:</span><span class="nb">tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="k">def</span> <span class="nf">stack_sorting</span><span class="p">(</span><span class="n">t</span><span class="p">:</span><span class="nb">iter</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span> 
     <span class="n">stack</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">t</span><span class="p">:</span>
-        <span class="c1"># try except 解决空栈的问题</span>
-        <span class="k">try</span><span class="p">:</span> 
-            <span class="k">while</span> <span class="n">item</span> <span class="o">&gt;=</span> <span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
-                <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
-            <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-        <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
-            <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="k">while</span> <span class="n">stack</span> <span class="ow">and</span> <span class="n">item</span> <span class="o">&gt;=</span> <span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
+        <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+
+    <span class="c1"># 将剩下的元素全部弹出</span>
     <span class="k">while</span> <span class="n">stack</span><span class="p">:</span>
         <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">t</span><span class="si">}</span><span class="s2"> 的排序结果为 </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">, 是否排序成功： </span><span class="si">{</span><span class="n">if_sorted</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">result</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
     <span class="c1"># 对 1~n-1 的数列进行排序</span>
-    <span class="n">n</span> <span class="o">=</span> <span class="mi">6</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
 
     <span class="c1"># permutations 用于生成所有排列</span>
     <span class="n">arrs</span> <span class="o">=</span> <span class="n">permutations</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">))</span>
+    <span class="n">max_iters</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">arr</span> <span class="ow">in</span> <span class="n">arrs</span><span class="p">:</span>
-        <span class="n">stack_sorting</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">stack_sorting</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+        <span class="n">iters</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">while</span> <span class="ow">not</span> <span class="n">if_sorted</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+            <span class="n">iters</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">a</span> <span class="o">=</span> <span class="n">stack_sorting</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+        <span class="n">max_iters</span> <span class="o">=</span> <span class="n">iters</span> <span class="k">if</span> <span class="n">max_iters</span> <span class="o">&lt;</span> <span class="n">iters</span> <span class="k">else</span> <span class="n">max_iters</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">arr</span><span class="si">}</span><span class="s2"> 需要的排列次数为 </span><span class="si">{</span><span class="n">iters</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;最大迭代次数为</span><span class="si">{</span><span class="n">max_iters</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="nb">clc</span><span class="p">;</span><span class="nb">clear</span><span class="p">;</span><span class="nb">close</span><span class="w"> </span><span class="nb">all</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="c">% 提供者：Madeceline</span>
+<span class="nb">clc</span><span class="p">;</span><span class="nb">clear</span><span class="p">;</span><span class="nb">close</span><span class="w"> </span><span class="nb">all</span><span class="p">;</span>
 <span class="c">%%</span>
 <span class="n">num</span><span class="p">=</span><span class="mi">4</span><span class="p">;</span>
 <span class="n">Perm</span><span class="p">=</span><span class="nb">perms</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="n">num</span><span class="p">);</span>
@@ -1271,6 +1329,50 @@
 </div>
 </div>
 </div>
+<h2 id="_4">算法分析与证明</h2>
+<p>事实上，这个所谓的堆栈排序“算法”并不能给所有的数组都排好序，例如 <span class="arithmatex">\(231\)</span> ，从左到右：</p>
+<ul>
+<li><span class="arithmatex">\(2\)</span> 先入栈；</li>
+<li><span class="arithmatex">\(3\)</span> 要入栈的时候，<span class="arithmatex">\(2\)</span> 需要出栈；</li>
+</ul>
+<p>这就已经出现问题，事实上，我们需要的是<strong>小的先出栈</strong>，从而达到排序的效果，但是这个例子中排序失败了。</p>
+<p>现在我们关心如下两个问题：</p>
+<ol>
+<li>什么样的数组（排列）能排序成功？</li>
+<li>在刚才的 <span class="arithmatex">\(231\)</span> 例子中，排序后会变成 <span class="arithmatex">\(213\)</span> ，此时再进行一次排序就会发现能排序成功为 <span class="arithmatex">\(123\)</span> . 这是否意味着<strong>所有的排列经过有限次堆栈排序都能排序成功</strong>？如果是，那么这个“有限次”的<strong>上限</strong>是多少？</li>
+</ol>
+<h3 id="_5">一次排序能成功的条件</h3>
+<p>在接下来的探讨中，不考虑数组中两个元素相等的情形，并将所有的数组都考虑为 <span class="arithmatex">\(1,2,\cdots,n\)</span> 的一个排列.</p>
+<p>在刚才的例子当中，我们实际上能抽象并推广为如下的排列：</p>
+<div class="arithmatex">\[
+\cdots \pi_{i_1}\cdots \pi_{i_2} \cdots \pi_{i_3}\cdots
+\]</div>
+<p>其中 <span class="arithmatex">\(i_1&lt;i_2&lt;i_3\)</span> ，我们的发现实际上能归结为如下的结论：</p>
+<blockquote>
+<p>当 <span class="arithmatex">\(\pi_{i_3}&lt;\pi_{i_1}&lt;\pi_{i_2}\)</span> 时，排序必定不成功.</p>
+</blockquote>
+<p>这个结论是比较显然的，根据大小关系 <span class="arithmatex">\(\pi_{i_3}\)</span> 必须要比 <span class="arithmatex">\(\pi_{i_1}\)</span> 要更先弹出到目标数组当中，但是由于 <span class="arithmatex">\(\pi_{i_2}\)</span> 的存在，<span class="arithmatex">\(\pi_{i_1}\)</span> 必须弹出，从而导致排序失败.</p>
+<p>因此，在有这样的例子之后，这是否是等价条件？我们给出如下的猜想：</p>
+<div class="admonition question">
+<p class="admonition-title">猜想：一次排序成功的等价条件</p>
+<p>排列：<br />
+$$ \pi_1 \pi_2\cdots \pi_n $$<br />
+能经过<strong>一次堆栈排序</strong>后排序成功的充要条件是：<span class="arithmatex">\(\forall i_1,i_2,i_3 (1\leqslant i_1&lt; i_2 &lt; i_3 \leqslant n)\)</span> ，<span class="arithmatex">\(\pi_{i_3}&lt;\pi_{i_1}&lt;\pi_{i_2}\)</span> 都不成立.</p>
+</div>
+<p>必要性已经阐述，下面考虑充分性：<br />
+在 <span class="arithmatex">\(n=3\)</span> 的时候，有如下的 <span class="arithmatex">\(5\)</span> 种排列：</p>
+<div class="arithmatex">\[
+123,132,213,312,321
+\]</div>
+<p>这些排列都能排序成功，详细论证略去；</p>
+<p>在 <span class="arithmatex">\(n&gt; 3\)</span> 时，<span class="arithmatex">\(\pi_{i_1},\pi_{i_2},\pi_{i_3}\)</span> 有 <span class="arithmatex">\(5\)</span> 种相对位置情形，和上述的 <span class="arithmatex">\(5\)</span> 种排列类似，我们只需论证：对于任意的 <span class="arithmatex">\(3\)</span> 个元素，堆栈排序都能保证它们在最终的排序结果中相对位置关系服从大小关系.</p>
+<p>例如，对于 <span class="arithmatex">\(\pi_{i_2}&lt;\pi_{i_1}&lt;\pi_{i_3}\)</span> 的情形，当操作到 <span class="arithmatex">\(\pi_{i_2}\)</span> 时，有如下两种可能：</p>
+<ul>
+<li>此时 <span class="arithmatex">\(\pi_{i_1}\)</span> 已出栈，这说明 <span class="arithmatex">\(\exists i (i_1&lt;i&lt;i_2)\)</span> 使得 <span class="arithmatex">\(\pi_{i_2}&lt;\pi_{i_1}&lt;\pi_i\)</span> ，这就与我们的题设条件矛盾.</li>
+<li>因此 <span class="arithmatex">\(\pi_{i_1}\)</span> 此时必须在栈内，并且 <span class="arithmatex">\(\pi_{i_2}\)</span> 也必须入栈；</li>
+<li>当 <span class="arithmatex">\(\pi_{i_3}\)</span> 操作时，此时要么 <span class="arithmatex">\(\pi_{i_1}\)</span> 和 <span class="arithmatex">\(\pi_{i_2}\)</span> 都已经出栈（相当于三者排序成功），要么全部或一个在栈内，此时 <span class="arithmatex">\(\pi_{i_3}\)</span> 要入栈时，二者都必须出栈，从而排序成功.</li>
+</ul>
+<p>对于其它的四种情形，排序情况都类似，因此猜想证明完毕. <span class="arithmatex">\(\square\)</span></p>
 
 
 
