@@ -1,12 +1,19 @@
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* 图片居中 */
 
 .katex {
-    font-size: 1.25em;
-    text-indent: 0;
-    text-rendering: auto;
+  font-size: 1.25em;
+  text-indent: 0;
+  text-rendering: auto;
+}
+
+/* 表格居中 */
+table {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
