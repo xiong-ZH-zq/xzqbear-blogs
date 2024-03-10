@@ -5,11 +5,11 @@ theme:
   language: zh
   name: material
   custom_dir: overrides
-  palette: 
+  palette:
     # Palette toggle for light mode
     - scheme: default
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
       primary: cyan
 
@@ -26,7 +26,7 @@ theme:
   font:
     text: PT Serif
   icon:
-    admonition:    # change icon of admonition
+    admonition: # change icon of admonition
       example: octicons/telescope-16
 
 markdown_extensions:
@@ -43,22 +43,23 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tilde
   - pymdownx.arithmatex:
-        generic: true
+      generic: true
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - md_in_html    # image configuration
-  
+  - md_in_html # image configuration
+  - tables
+
 plugins:
   - search
-  - callouts    # transform obsidian callout to material admonition
+  - callouts # transform obsidian callout to material admonition
   - glightbox
   - tags
   - ezlinks
   - blog:
       enabled: true
-      blog_dir: ./blog 
+      blog_dir: ./blog
       blog_toc: true
       post_date_format: full
       post_dir: "{blog}/articles"
@@ -70,12 +71,12 @@ plugins:
         kwds:
           case: lower
 extra_javascript:
-  - javascripts/config.js 
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js  
+  - javascripts/config.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
   - css/extra.css
-extra: 
+extra:
   attachments: "imgs"
