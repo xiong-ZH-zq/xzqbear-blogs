@@ -17,3 +17,7 @@ table {
   margin-right: auto;
   margin-left: auto;
 }
+
+.md-typeset .admonition{
+  font-size: .8rem;
+}
