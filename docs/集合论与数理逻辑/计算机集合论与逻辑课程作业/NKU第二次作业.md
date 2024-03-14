@@ -1,0 +1,68 @@
+---
+comments: true
+---
+
+>[!faq] 题1
+>称两个语句集**语义等价**当且仅当它们恰好满足相同的真值指派；称 $\Gamma$ **语义独立**当且仅当没有 $\varphi\in \Gamma$ 使得 $\Gamma\sim \left\lbrace \varphi \right\rbrace\mid\!\equiv \varphi$ . （$\Gamma\sim \left\lbrace \varphi \right\rbrace$ 为差集）
+>
+>(i) 提供一个单语句集（单个语句组成的集合）语义独立的充要条件；
+>
+>(ii) 证明：所有有限语句集有一个既语义独立又语义等价的子集；
+>
+>(iii) 证明：存在无限集，使得它没有既语义独立又语义等价的子集.
+
+(i) 设单语句集 $\Gamma\sim\left\lbrace \varphi \right\rbrace$ 语义独立，则有 $\varnothing\mid\!\equiv \varphi$ 不成立，也就是说充要条件为：$\varphi$ 不为永真式.
+
+(ii) 如果其本身就是语义独立的，那么它自己就符合题意.
+
+若不然，说明存在 $\varphi_1\in \Gamma$ 使得 $\Gamma\sim \left\lbrace \varphi_1 \right\rbrace \mid\!\equiv \varphi_1$ . 那么取其子集
+
+$$
+\Gamma_1 = \Gamma\sim \left\lbrace \varphi_1 \right\rbrace
+$$
+
+此时的 $\Gamma_1$ 和 $\Gamma$ 是语义等价的，也就是说保持了语义等价. 如果还不语义独立，则存在 $\varphi_2$ 满足 $\Gamma_2\sim \left\lbrace \varphi_1 \right\rbrace \mid\!\equiv \varphi_2$ ，取
+
+$$
+\Gamma_2 = \Gamma\sim \left\lbrace \varphi_1,\varphi_2 \right\rbrace
+$$
+
+以此类推，由于 $\Gamma$ 为有限集，最终总能得到语义独立的子集：
+
+$$
+\Gamma_n = \Gamma\sim \left\lbrace \varphi_1,\varphi_2,\cdots,\varphi_n \right\rbrace
+$$
+
+此时如果 $\Gamma_n = \varnothing$ ，则由 (i) ，说明 $\Gamma$ 中全为永真式，$\Gamma$ 和 $\Gamma_n$ 语义等价. 如果 $\Gamma_n$ 非空，由于语义等价是保持的，所以 $\Gamma_n$ 即为符合题意的子集.
+
+(iii) 考虑无穷集合：
+
+$$
+S = \left\lbrace \varphi_1,\varphi_1 \land \varphi_2,\varphi_1\land \varphi_2 \land \varphi_3,\cdots \right\rbrace
+$$
+
+其中 $\varphi_k$ 均不是永真的，因此单句集均不语义独立.
+
+而对于其中的任意两个不同语句：
+
+$$
+\psi_1 = \bigwedge_{i=1}^m \varphi_i , \psi_2 = \bigwedge_{j=1}^n \varphi_j
+$$
+
+不妨令 $m<n$ ，不难发现对于任意一个真值指派 $V$ ，如果 $V(\psi_2)=\mathrm{T}$ ，就有 $V(\psi_1)=\mathrm{T}$ . 那么此时对于包含了这两个语句的任意一个语句集 $\Gamma$ ，都没有 $\Gamma-\left\lbrace \psi_1 \right\rbrace\mid\!\equiv \psi_1$ . 
+
+根据选取的两个语句的任意性，$S$ 的任何子集都不是独立的，从而满足题意. $\square$
+
+
+>[!faq] 题2
+>对于以下三个性质：
+>1. 相容
+>2. 完全
+>3. 是一个理论 (is a theory)
+>
+>其中哪一对性质能推出另一个性质？
+
+完全和理论可以推出相容.
+
+假设语句集 $\Delta$ 不相容，根据 Hinman 命题 1.4.17 ，所有语句 $\varphi$ 都是它的语义后承，因此 $\neg \varphi$ 和 $\varphi$ 都在语句集 $\Delta$ 内，但是 $\Delta$ 是完全的，这显然出现了矛盾. $\square$
+
