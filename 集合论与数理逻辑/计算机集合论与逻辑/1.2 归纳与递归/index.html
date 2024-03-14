@@ -9,23 +9,25 @@
       
       
       
+        <link rel="prev" href="../1.1%20%E5%91%BD%E9%A2%98%E8%AF%AD%E8%A8%80/">
       
-        <link rel="next" href="blog/">
+      
+        <link rel="next" href="../1.3%20%E5%91%BD%E9%A2%98%E8%AF%AD%E4%B9%89/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
     
     
       
-        <title>xzqbear blogs</title>
+        <title>归纳与递归(Induction and Recursion) - xzqbear blogs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -54,16 +56,16 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
     
-      <link rel="stylesheet" href="css/extra.css">
+      <link rel="stylesheet" href="../../../css/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -72,7 +74,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -91,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#home" class="md-skip">
+        <a href="#induction-and-recursion" class="md-skip">
           跳转至
         </a>
       
@@ -107,7 +109,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="." title="xzqbear blogs" class="md-header__button md-logo" aria-label="xzqbear blogs" data-md-component="logo">
+    <a href="../../.." title="xzqbear blogs" class="md-header__button md-logo" aria-label="xzqbear blogs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -127,7 +129,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              归纳与递归(Induction and Recursion)
             
           </span>
         </div>
@@ -226,11 +228,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -249,7 +249,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="blog/" class="md-tabs__link">
+        <a href="../../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -273,7 +273,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/NKU%20%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E4%BD%9C%E4%B8%9A%E6%80%BB%E7%BB%93/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/" class="md-tabs__link">
+        <a href="../../../%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/NKU%20%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E4%BD%9C%E4%B8%9A%E6%80%BB%E7%BB%93/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/" class="md-tabs__link">
           
   
   实变函数
@@ -300,7 +300,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/1.1%20%E9%9A%8F%E6%9C%BA%E7%8E%B0%E8%B1%A1%E4%B8%8E%E7%BB%9F%E8%AE%A1%E8%A7%84%E5%BE%8B%E6%80%A7/" class="md-tabs__link">
+        <a href="../../../%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/1.1%20%E9%9A%8F%E6%9C%BA%E7%8E%B0%E8%B1%A1%E4%B8%8E%E7%BB%9F%E8%AE%A1%E8%A7%84%E5%BE%8B%E6%80%A7/" class="md-tabs__link">
           
   
   概率论
@@ -321,7 +321,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E7%AE%97%E6%B3%95Index/" class="md-tabs__link">
+        <a href="../../../%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E7%AE%97%E6%B3%95Index/" class="md-tabs__link">
           
   
   组合数学
@@ -335,17 +335,21 @@
         
   
   
+    
+  
   
     
     
       
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E9%80%BB%E8%BE%91/1.1%20%E5%91%BD%E9%A2%98%E8%AF%AD%E8%A8%80/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../1.1%20%E5%91%BD%E9%A2%98%E8%AF%AD%E8%A8%80/" class="md-tabs__link">
           
   
   集合论与数理逻辑
@@ -376,9 +380,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -389,7 +391,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="xzqbear blogs" class="md-nav__button md-logo" aria-label="xzqbear blogs" data-md-component="logo">
+    <a href="../../.." title="xzqbear blogs" class="md-nav__button md-logo" aria-label="xzqbear blogs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -416,30 +418,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -448,77 +430,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      关于我
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      关于本站
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="关于本站">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      阅读提醒
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      建站历程
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      本站的建站流程
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -572,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="blog/" class="md-nav__link">
+      <a href="../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -635,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="blog/archive/2024/" class="md-nav__link">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -751,7 +662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/NKU%20%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E4%BD%9C%E4%B8%9A%E6%80%BB%E7%BB%93/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/" class="md-nav__link">
+      <a href="../../../%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/NKU%20%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E4%BD%9C%E4%B8%9A%E6%80%BB%E7%BB%93/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -820,7 +731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/NKU%20%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%94%E8%AE%B0/1.1%20Intro%26%E9%9B%86%E5%90%88%E5%BA%8F%E5%88%97%E7%9A%84%E6%9E%81%E9%99%90/" class="md-nav__link">
+      <a href="../../../%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/NKU%20%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%94%E8%AE%B0/1.1%20Intro%26%E9%9B%86%E5%90%88%E5%BA%8F%E5%88%97%E7%9A%84%E6%9E%81%E9%99%90/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -841,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/NKU%20%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%94%E8%AE%B0/1.2%20%E6%98%A0%E5%B0%84/" class="md-nav__link">
+      <a href="../../../%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/NKU%20%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%94%E8%AE%B0/1.2%20%E6%98%A0%E5%B0%84/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -862,7 +773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/NKU%20%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%94%E8%AE%B0/1.3%20%E9%9B%86%E5%90%88%E7%9A%84%E7%AD%89%E4%BB%B7%E3%80%81%E5%9F%BA%E6%95%B0/" class="md-nav__link">
+      <a href="../../../%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/NKU%20%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%94%E8%AE%B0/1.3%20%E9%9B%86%E5%90%88%E7%9A%84%E7%AD%89%E4%BB%B7%E3%80%81%E5%9F%BA%E6%95%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -883,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/NKU%20%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%94%E8%AE%B0/1.4%20n%20%E7%BB%B4%E5%AE%9E%E6%95%B0%E7%A9%BA%E9%97%B4%E7%9A%84%E6%8B%93%E6%89%91/" class="md-nav__link">
+      <a href="../../../%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/NKU%20%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%94%E8%AE%B0/1.4%20n%20%E7%BB%B4%E5%AE%9E%E6%95%B0%E7%A9%BA%E9%97%B4%E7%9A%84%E6%8B%93%E6%89%91/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -999,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/1.1%20%E9%9A%8F%E6%9C%BA%E7%8E%B0%E8%B1%A1%E4%B8%8E%E7%BB%9F%E8%AE%A1%E8%A7%84%E5%BE%8B%E6%80%A7/" class="md-nav__link">
+      <a href="../../../%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/1.1%20%E9%9A%8F%E6%9C%BA%E7%8E%B0%E8%B1%A1%E4%B8%8E%E7%BB%9F%E8%AE%A1%E8%A7%84%E5%BE%8B%E6%80%A7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1020,7 +931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/1.2%20%E6%A0%B7%E6%9C%AC%E7%A9%BA%E9%97%B4%E4%B8%8E%E4%BA%8B%E4%BB%B6/" class="md-nav__link">
+      <a href="../../../%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/1.2%20%E6%A0%B7%E6%9C%AC%E7%A9%BA%E9%97%B4%E4%B8%8E%E4%BA%8B%E4%BB%B6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1041,7 +952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/1.3%20%E5%8F%A4%E5%85%B8%E6%A6%82%E5%9E%8B/" class="md-nav__link">
+      <a href="../../../%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/1.3%20%E5%8F%A4%E5%85%B8%E6%A6%82%E5%9E%8B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1062,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/1.4%20%E5%87%A0%E4%BD%95%E6%A6%82%E5%9E%8B/" class="md-nav__link">
+      <a href="../../../%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/1.4%20%E5%87%A0%E4%BD%95%E6%A6%82%E5%9E%8B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1083,7 +994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/1.5%20%E6%A6%82%E7%8E%87%E7%A9%BA%E9%97%B4/" class="md-nav__link">
+      <a href="../../../%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/1.5%20%E6%A6%82%E7%8E%87%E7%A9%BA%E9%97%B4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1104,7 +1015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/2.1%20%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87%E4%B8%8E%20Bayes%20%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+      <a href="../../../%E6%A6%82%E7%8E%87%E8%AE%BA/NKU%20%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/2.1%20%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87%E4%B8%8E%20Bayes%20%E5%85%AC%E5%BC%8F/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1180,7 +1091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E7%AE%97%E6%B3%95Index/" class="md-nav__link">
+      <a href="../../../%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E7%AE%97%E6%B3%95Index/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1241,7 +1152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E7%AE%97%E6%B3%95/1.1%20%E6%8E%92%E5%88%97%E5%B8%B8%E7%94%A8%E7%9A%84%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/" class="md-nav__link">
+      <a href="../../../%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E7%AE%97%E6%B3%95/1.1%20%E6%8E%92%E5%88%97%E5%B8%B8%E7%94%A8%E7%9A%84%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1262,7 +1173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E7%AE%97%E6%B3%95/1.2%20%E9%80%86%E5%BA%8F%E6%95%B0/" class="md-nav__link">
+      <a href="../../../%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E7%AE%97%E6%B3%95/1.2%20%E9%80%86%E5%BA%8F%E6%95%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1283,7 +1194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E7%AE%97%E6%B3%95/1.3%20%E6%8E%92%E5%88%97%E7%9A%84%E7%BE%A4%E7%BB%93%E6%9E%84/" class="md-nav__link">
+      <a href="../../../%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E7%AE%97%E6%B3%95/1.3%20%E6%8E%92%E5%88%97%E7%9A%84%E7%BE%A4%E7%BB%93%E6%9E%84/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1304,7 +1215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E7%AE%97%E6%B3%95/1.4%20%E9%87%8D%E9%9B%86%E4%B8%8A%E7%9A%84%E6%8E%92%E5%88%97/" class="md-nav__link">
+      <a href="../../../%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E7%AE%97%E6%B3%95/1.4%20%E9%87%8D%E9%9B%86%E4%B8%8A%E7%9A%84%E6%8E%92%E5%88%97/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1325,7 +1236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E7%AE%97%E6%B3%95/2.1%20%E5%A0%86%E6%A0%88%E6%8E%92%E5%BA%8F/" class="md-nav__link">
+      <a href="../../../%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E7%AE%97%E6%B3%95/2.1%20%E5%A0%86%E6%A0%88%E6%8E%92%E5%BA%8F/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1358,25 +1269,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1387,7 +1301,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             集合论与数理逻辑
@@ -1398,8 +1312,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -1407,13 +1323,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" checked>
         
           
           <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
@@ -1427,7 +1341,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_1">
             <span class="md-nav__icon md-icon"></span>
             计算机集合论与逻辑
@@ -1441,7 +1355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E9%80%BB%E8%BE%91/1.1%20%E5%91%BD%E9%A2%98%E8%AF%AD%E8%A8%80/" class="md-nav__link">
+      <a href="../1.1%20%E5%91%BD%E9%A2%98%E8%AF%AD%E8%A8%80/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1459,10 +1373,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E9%80%BB%E8%BE%91/1.2%20%E5%BD%92%E7%BA%B3%E4%B8%8E%E9%80%92%E5%BD%92/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    归纳与递归(Induction and Recursion)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1471,6 +1405,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#induction-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      归纳系统 (induction system)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1483,7 +1446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E9%80%BB%E8%BE%91/1.3%20%E5%91%BD%E9%A2%98%E8%AF%AD%E4%B9%89/" class="md-nav__link">
+      <a href="../1.3%20%E5%91%BD%E9%A2%98%E8%AF%AD%E4%B9%89/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1504,7 +1467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E9%80%BB%E8%BE%91/1.4%20%E5%91%BD%E9%A2%98%E7%90%86%E8%AE%BA/" class="md-nav__link">
+      <a href="../1.4%20%E5%91%BD%E9%A2%98%E7%90%86%E8%AE%BA/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1525,7 +1488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E9%80%BB%E8%BE%91/2.1%20%E4%B8%80%E9%98%B6%E8%AF%AD%E8%A8%80/" class="md-nav__link">
+      <a href="../2.1%20%E4%B8%80%E9%98%B6%E8%AF%AD%E8%A8%80/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1594,7 +1557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A/NKU%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A/" class="md-nav__link">
+      <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A/NKU%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1615,7 +1578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A/NKU%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A/" class="md-nav__link">
+      <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%9B%86%E5%90%88%E8%AE%BA%E4%B8%8E%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A/NKU%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1652,8 +1615,6 @@
             
             
               
-                
-              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1673,53 +1634,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#induction-system" class="md-nav__link">
     <span class="md-ellipsis">
-      关于我
+      归纳系统 (induction system)
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      关于本站
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="关于本站">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      阅读提醒
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      建站历程
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      本站的建站流程
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1741,32 +1660,40 @@
   
 
 
-<h1 id="home">Home</h1>
-<p>这里是 xzqbear 的数学笔记博客存放站，本站由 <code>mkdocs</code> 生成，现在仍然在更新当中.</p>
-<h2 id="_1">关于我</h2>
-<p><a class="glightbox" href="imgs/profile.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="left" alt="profile" src="imgs/profile.jpg" width="200" /></a></p>
-<p>我是来自NKU的一名<strong>数学系</strong>大类学生，喜欢数学与技术，以下是联系我的一些方式：</p>
-<ul>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m-3 13H7v-2h10m0-2H7v-2h10m3-2h-3V6h3"/></svg></span> NKU邮箱(Email) ： <code>xzqbear@mail.nankai.edu.cn</code></li>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> Github 个人主页：<a href="https://github.com/xiong-ZH-zq">xiong-ZH-zq (xzqbear) (github.com)</a></li>
-</ul>
-<p>这里的笔记内容主要是NKU数学类课程的课程笔记，参考的教材也不仅仅只局限于NKU使用的教材。</p>
-<p>如果喜欢这个笔记存放站，欢迎给一个 Star <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21 12 17.27Z"/></svg></span> 或者 Fork <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3V192c0 17.7 14.3 32 32 32h160c17.7 0 32-14.3 32-32v-38.7c-28.3-12.3-48-40.5-48-73.3 0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V192c0 53-43 96-96 96h-48v70.7c28.3 12.3 48 40.5 48 73.3 0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V288h-48c-53 0-96-43-96-96v-38.7C19.7 141 0 112.8 0 80 0 35.8 35.8 0 80 0s80 35.8 80 80zm208 24a24 24 0 1 0 0-48 24 24 0 1 0 0 48zM248 432a24 24 0 1 0-48 0 24 24 0 1 0 48 0z"/></svg></span> 这个仓库。</p>
-<h2 id="_2">关于本站</h2>
-<h3 id="_3">阅读提醒</h3>
-<p>如果想把文字或者公式保留下来，可以直接进入 Github 源代码仓库下载 md 文件。</p>
-<p>如果你也使用 Obsidian 的语法写笔记，可以直接抄我的配置文件。</p>
-<h3 id="_4">建站历程</h3>
-<ul>
-<li>2023-12-18 本站建成，作为一个个人学习数学的一个小记录.</li>
-</ul>
-<h3 id="_5">本站的建站流程</h3>
-<p>我曾先后尝试过很多博客，但是最终我还是选择了 mkdocs 静态博客的方案。</p>
-<p>最开始我选择了博客园，博客园非常简洁明了，注册账号申请博客之后就不存在多余的配置环节，基本就可以直接开始写作，但是主题太丑，导致我一开始花了很多时间折腾后台的CSS和HTML，后来发现实际上这是本末倒置的，博客最重要的一点还是能<strong>持续产出</strong>，荒废了产出也就会荒废了学习。</p>
-<p>再后来，我选择在 Obsidian 里面进行笔记撰写，虽然 Obsidian 里面配置好顺手的插件之后体验很好，我还是在想“如何发布笔记”这件事情，因为无论如何，这是一种<strong>开源精神</strong>，不管是开源代码还是开源所谓的“知识”，互联网是一个巨大的知识宝库，但是如今的国内互联网环境下，却难见到良好的知识分享环境。虽然我不反对甚至完全提倡知识付费，但是国内某些平台将国外免费就能获取到的知识撷取一些就直接高价售卖实在让人难以忍受。在“开源精神”最盛的计算机科学尚且如此，数学等理学类学科只怕更是惨不忍睹了，国外社区 math stack exchange（以下简称 MSE） 面前，国内的数学知识交流社区没有一个能打的，每每在浏览 MSE 的时候，我都在想“如果国内有相同类型的社区就好了”，只不过从国内的互联网环境来看，这估计只能是空想。</p>
-<p>我一开始使用 Obsidian 的 Webpage Export 插件进行网页导出，然后直接放在 Github Pages 上直接进行托管，一开始倒是比较正常，但是时间久了我才发现：文件稍微多起来就基本无法更改，每次修改了笔记之后都需要直接删除源文件，再把修改之后的文件放上去，这根本不存在“管理”，因此没几天我就放弃了。转而考虑类似 Digital Garden 和 Obsius 这样的插件，有一个通病就在于：自由度低，受限于国内的网络环境（这不只是挂梯子就能弥合的），而且缺乏了交流，也就是没有评论系统，这样比博客园强在哪呢？</p>
-<p>最终我选择了 Mkdocs ，因为我常用的语言就是 Python ，并且一些适配 Obsidian 的插件也帮我搭建好了工作流。我看到了一些看起来更好的工作流，类似 quartz （算是无缝衔接 Obsidian），但是有个问题在于它没有评论系统，同时它是 Javascript 的链条，不方便自定义。</p>
-<p>最后，在之后的日子里，如果我能通过这里的文字帮助到哪怕一个人，都不算是白费力气了。</p>
+<h1 id="induction-and-recursion">归纳与递归(Induction and Recursion)</h1>
+<h2 id="induction-system">归纳系统 (induction system)</h2>
+<p>在学完数学归纳法和语句归纳法后，实际上我们可以考虑抽象出归纳的概念.</p>
+<p>对于每个自然数 <span class="arithmatex">\(n\)</span> ，都有一个性质 <span class="arithmatex">\(\mathcal{P}\)</span> ，可以记为 <span class="arithmatex">\(\mathcal{P}(n)\)</span> ，<strong>归纳假设</strong>实际上就是对于一个固定的 <span class="arithmatex">\(n\)</span> ，<span class="arithmatex">\(\mathcal{P}(n)\)</span> 成立时，可以推导出 <span class="arithmatex">\(\mathcal{P}(n+1)\)</span> .</p>
+<p>此时我们记</p>
+<div class="arithmatex">\[
+Y_{\mathcal{P}} = \left\lbrace n \in \omega : \mathcal{P}(n) \right\rbrace
+\]</div>
+<p>（注意 <span class="arithmatex">\(\omega\)</span> 为自然数集）<br />
+归纳步骤实质上就是证明 <span class="arithmatex">\(Y_{\mathcal{P}}\)</span> 是<strong>封闭</strong>的. 最终的结论就是 <span class="arithmatex">\(Y_{\mathcal{P}}=\omega\)</span> .</p>
+<p>对于语句归纳法，原子语句情形就是<strong>广义的</strong> <span class="arithmatex">\(0\)</span> 的情形，而<strong>后继函数</strong>也类似，考虑利用集合的语言来进行概括.</p>
+<div class="admonition note">
+<p class="admonition-title">定义：归纳系统 (Induction System)</p>
+<p>一个<strong>归纳系统</strong>就是一个三元组 <span class="arithmatex">\(\mathcal{X}=(X,X_0,\mathcal{H})\)</span> ，其中 <span class="arithmatex">\(X\)</span> 为非空集合，<span class="arithmatex">\(X_0 \subset X\)</span> 且 <span class="arithmatex">\(\mathcal{H}\)</span> 为 <span class="arithmatex">\(X\)</span> 上的<strong>有限函数</strong>集合.</p>
+<p>有限函数是指，对于每个 <span class="arithmatex">\(H \in \mathcal{H}\)</span> ，<span class="arithmatex">\(H\)</span> 为 <span class="arithmatex">\(X^{k_H}\to X\)</span> 的函数.</p>
+<p>对于一个归纳系统，我们将其与一个集合序列关联，这个集合序列递推定义为：<br />
+$$ X_{n+1} := X_n \cup \left\lbrace H(x_0,\cdots,x_{k_H-1}):H\in \mathcal{H} \text{ and } x_0,\cdots,x_{k_H-1}\in X_n \right\rbrace $$<br />
+集合 <span class="arithmatex">\(\overline{X} := \bigcup\limits_{n\in \omega}X_n\)</span> 称为 <span class="arithmatex">\(X_0\)</span> 在 <span class="arithmatex">\(\mathcal{H}\)</span> 下的<strong>归纳闭包</strong>. 整个归纳过程称为集合 <span class="arithmatex">\(\overline{X}\)</span> 的<strong>归纳定义</strong>.</p>
+</div>
+<p>我们把原来的归纳法纳入到这个框架当中：对于自然数集合 <span class="arithmatex">\(\omega\)</span> ，构造归纳系统：</p>
+<div class="arithmatex">\[
+\mathcal{X}_\omega = (\mathbb{R},\left\lbrace 0 \right\rbrace,\left\lbrace \mathrm{Sc} \right\rbrace)
+\]</div>
+<p>其中 <span class="arithmatex">\(\mathbb{R}\)</span> 为实数集，而 <span class="arithmatex">\(\mathrm{Sc}\)</span> 为后继函数，即 <span class="arithmatex">\(\mathrm{Sc}(n)=n+1\)</span> .</p>
+<p>那么不难推得：</p>
+<div class="arithmatex">\[
+X_n = \left\lbrace 0,1,\cdots,n-1 \right\rbrace
+\]</div>
+<p>归纳闭包自然就是 <span class="arithmatex">\(\overline{X} = \omega\)</span> .</p>
+<div class="admonition note">
+<p class="admonition-title">命题：归纳集合的可数性</p>
+<p>对任意的归纳系统 <span class="arithmatex">\(\mathcal{X} = (X,X_0,\mathcal{H})\)</span> ，如果 <span class="arithmatex">\(X_0\)</span> 和 <span class="arithmatex">\(\mathcal{H}\)</span> 是可数的，则归纳闭包 <span class="arithmatex">\(\overline{X}\)</span> 也是可数的.</p>
+</div>
+<p>可数集的并都是可数的，证明 <span class="arithmatex">\(X_n\)</span> 都可数即可. <span class="arithmatex">\(\square\)</span></p>
 
 
 
@@ -1779,8 +1706,6 @@
 
 
 
-
-  
 
 
 
@@ -1872,12 +1797,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.expand"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
-        <script src="javascripts/config.js"></script>
+        <script src="../../../javascripts/config.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
       
