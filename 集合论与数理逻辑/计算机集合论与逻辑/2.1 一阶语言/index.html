@@ -1608,7 +1608,7 @@
           <li class="md-nav__item">
   <a href="#mathfraka-" class="md-nav__link">
     <span class="md-ellipsis">
-      \(\mathfrak{A}\)-真值指派
+      \(\mathfrak{A}\)-指派
     </span>
   </a>
   
@@ -1892,7 +1892,7 @@
           <li class="md-nav__item">
   <a href="#mathfraka-" class="md-nav__link">
     <span class="md-ellipsis">
-      \(\mathfrak{A}\)-真值指派
+      \(\mathfrak{A}\)-指派
     </span>
   </a>
   
@@ -2179,9 +2179,9 @@ $$ \forall \varepsilon&gt;0, \exists N&gt; 0, \forall n&gt;N, |x_n-a|&lt;\vareps
 \]</div>
 <h2 id="_6">语义部分</h2>
 <p>在定义了语法层面上的数学结构后，我们需要赋予这些对象意义，因此我们采用和命题逻辑相似的方法进行研究.</p>
-<h3 id="mathfraka-"><span class="arithmatex">\(\mathfrak{A}\)</span>-真值指派</h3>
+<h3 id="mathfraka-"><span class="arithmatex">\(\mathfrak{A}\)</span>-指派</h3>
 <div class="admonition note">
-<p class="admonition-title">定义：<span class="arithmatex">\(\mathfrak{A}\)</span>-真值指派</p>
+<p class="admonition-title">定义：<span class="arithmatex">\(\mathfrak{A}\)</span>-指派</p>
 <p>对于任意的 <span class="arithmatex">\(L\)</span>-结构 <span class="arithmatex">\(\mathfrak{A}\)</span> ，一个 <span class="arithmatex">\(\mathfrak{A}\)</span>-<strong>真值指派</strong>就是指一个函数 <span class="arithmatex">\(\alpha: \mathrm{Vb}\to A\)</span> .</p>
 </div>
 <p>为什么要这么定义真值指派？这是由于在结构当中，只有变元所代表的东西是不确定的，例如在一阶算数语言 <span class="arithmatex">\(L_\Omega\)</span> 当中，<span class="arithmatex">\(\dot{\mathrm{S}}0\)</span> 是确定的，但是</p>
@@ -2198,18 +2198,18 @@ V_{\mathfrak{A},\alpha}: \mathrm{Te}_L \to A
 <div class="arithmatex">\[
 t = x+\dot{\mathrm{S}}0
 \]</div>
-<p>在给定了 <span class="arithmatex">\(\alpha\)</span> 时，对项的真值指派写为 <span class="arithmatex">\(t^{\mathfrak{A}}[\alpha]\)</span> ，表示结构 <span class="arithmatex">\(\mathfrak{A}\)</span> 中的项 <span class="arithmatex">\(t\)</span> 在 <span class="arithmatex">\(\mathfrak{A}\)</span>-真值指派 <span class="arithmatex">\(\alpha\)</span> 下的取值.</p>
+<p>在给定了 <span class="arithmatex">\(\alpha\)</span> 时，对项的真值指派写为 <span class="arithmatex">\(t^{\mathfrak{A}}[\alpha]\)</span> ，表示结构 <span class="arithmatex">\(\mathfrak{A}\)</span> 中的项 <span class="arithmatex">\(t\)</span> 在 <span class="arithmatex">\(\mathfrak{A}\)</span>-指派 <span class="arithmatex">\(\alpha\)</span> 下的取值.</p>
 <p>当然，这也仅仅是符号上的一个新约定，我们还并没有解决项的取值的定义问题，因此我们需要下面的定义：</p>
 <div class="admonition note">
 <p class="admonition-title">定义：<span class="arithmatex">\(L\)</span>-项的取值</p>
-<p>对于任意的 <span class="arithmatex">\(L\)</span>-结构 <span class="arithmatex">\(\mathfrak{A}\)</span> 和任意的 <span class="arithmatex">\(\mathfrak{A}\)</span>-真值指派 <span class="arithmatex">\(\alpha\)</span> ：</p>
+<p>对于任意的 <span class="arithmatex">\(L\)</span>-结构 <span class="arithmatex">\(\mathfrak{A}\)</span> 和任意的 <span class="arithmatex">\(\mathfrak{A}\)</span>-指派 <span class="arithmatex">\(\alpha\)</span> ：</p>
 <ol>
 <li>对于每个变元 <span class="arithmatex">\(x\)</span> ，<span class="arithmatex">\(x^{\mathfrak{A}}[\alpha] = \alpha(x)\)</span> ；</li>
 <li>对于每个 <span class="arithmatex">\(c\in \mathrm{Cs}_L\)</span> ，<span class="arithmatex">\(c^\mathfrak{A}[\alpha]=c^\mathfrak{A}\)</span> ；</li>
 <li>对于每个 <span class="arithmatex">\(f\in \mathrm{Fs}_L\)</span> 和 <span class="arithmatex">\(t_0,\cdots,t_{\nu_L(f)-1}\in \mathrm{Te}_L\)</span>，有 $$ (ft_0\cdots t_{\nu_L(f)-1})^\mathfrak{A}[\alpha] = f^{\mathfrak{A}}(t_0^\mathfrak{A}[\alpha],\cdots,t^{\mathfrak{A}}_{\nu_L(f)-1}[\alpha]). $$</li>
 </ol>
 </div>
-<p>简而言之，就是变元的取值由 <span class="arithmatex">\(\mathfrak{A}\)</span>-真值指派 <span class="arithmatex">\(\alpha\)</span> 决定，常值和真值指派无关，函数的取值等于它作用的这些 <span class="arithmatex">\(L\)</span>-原子项的取值后 <span class="arithmatex">\(f\)</span> 作用下的取值.</p>
+<p>简而言之，就是变元的取值由 <span class="arithmatex">\(\mathfrak{A}\)</span>-指派 <span class="arithmatex">\(\alpha\)</span> 决定，常值和真值指派无关，函数的取值等于它作用的这些 <span class="arithmatex">\(L\)</span>-原子项的取值后 <span class="arithmatex">\(f\)</span> 作用下的取值.</p>
 <p>我们来看一个实例：</p>
 <div class="admonition question">
 <p class="admonition-title">一阶算数语言的计算</p>
@@ -2243,7 +2243,7 @@ $$ (\dot{\mathrm{S}}x\times \dot{\mathrm{S}}\dot{\mathrm{S}}y)^\Omega [\alpha] $
 </ul>
 <div class="admonition note">
 <p class="admonition-title">定义：<span class="arithmatex">\(L\)</span>-公式的定义（部分）</p>
-<p>对任意的结构 <span class="arithmatex">\(\mathfrak{A}\)</span> 和 <span class="arithmatex">\(\mathfrak{A}\)</span>-真值指派 <span class="arithmatex">\(\alpha\)</span> ，所有的 <span class="arithmatex">\(L\)</span>-公式 <span class="arithmatex">\(\varphi\)</span> 和 <span class="arithmatex">\(\psi\)</span> 和变元 <span class="arithmatex">\(x\)</span> 有：<br />
+<p>对任意的结构 <span class="arithmatex">\(\mathfrak{A}\)</span> 和 <span class="arithmatex">\(\mathfrak{A}\)</span>-指派 <span class="arithmatex">\(\alpha\)</span> ，所有的 <span class="arithmatex">\(L\)</span>-公式 <span class="arithmatex">\(\varphi\)</span> 和 <span class="arithmatex">\(\psi\)</span> 和变元 <span class="arithmatex">\(x\)</span> 有：<br />
 $$ V_{\mathfrak{A},\alpha}({\exists x \varphi}) := \begin{cases}\mathrm{T},&amp;\text{if for some }a\in A, V_{\mathfrak{A},\alpha_{x\to a}}(\varphi)=\mathrm{T} \\ \mathrm{F}, &amp;\text{otherwise}.\end{cases} $$</p>
 </div>
 
