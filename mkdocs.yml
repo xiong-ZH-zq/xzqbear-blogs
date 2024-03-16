@@ -57,6 +57,8 @@ plugins:
   - glightbox
   - tags
   - ezlinks
+  - mkdocs-jupyter:
+      include: ["*.ipynb"]
   - blog:
       enabled: true
       blog_dir: ./blog
