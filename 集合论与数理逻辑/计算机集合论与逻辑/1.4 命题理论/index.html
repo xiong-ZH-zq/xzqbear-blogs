@@ -1551,7 +1551,7 @@
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      完全延拓
     </span>
   </a>
   
@@ -1565,7 +1565,7 @@
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      命题理论集合的结构
+      可公理化类
     </span>
   </a>
   
@@ -1584,7 +1584,16 @@
           <li class="md-nav__item">
   <a href="#pct" class="md-nav__link">
     <span class="md-ellipsis">
-      PCT 与有限相容
+      PCT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      有限相容
     </span>
   </a>
   
@@ -1599,8 +1608,26 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#apct-pct" class="md-nav__link">
+    <span class="md-ellipsis">
+      APCT 和 PCT 的等价性
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      相容、完全、有限相容的推导关系
+    </span>
+  </a>
   
 </li>
       
@@ -1853,7 +1880,7 @@
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      完全延拓
     </span>
   </a>
   
@@ -1867,7 +1894,7 @@
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      命题理论集合的结构
+      可公理化类
     </span>
   </a>
   
@@ -1886,7 +1913,16 @@
           <li class="md-nav__item">
   <a href="#pct" class="md-nav__link">
     <span class="md-ellipsis">
-      PCT 与有限相容
+      PCT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      有限相容
     </span>
   </a>
   
@@ -1901,8 +1937,26 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#apct-pct" class="md-nav__link">
+    <span class="md-ellipsis">
+      APCT 和 PCT 的等价性
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      相容、完全、有限相容的推导关系
+    </span>
+  </a>
   
 </li>
       
@@ -2030,11 +2084,65 @@ V(\varphi)=\mathrm{F} \Rightarrow V(\neg \varphi)=\mathrm{T}\Rightarrow W(\neg \
 <p>对于集合 <span class="arithmatex">\(E =\left\lbrace T: T \text{ is a propositional theory} \right\rbrace\)</span> ，也就是所有命题理论构成的集合，它的势是多少？</p>
 </div>
 <p>一方面，由推论可知集合 <span class="arithmatex">\(E\)</span> 至少为连续统势，另一方面，<span class="arithmatex">\(T \subseteq \mathrm{Sent}_L\)</span> ，因此 <span class="arithmatex">\(E \subseteq \mathcal{P}(\mathrm{Sent}_L)\)</span> ，其中 <span class="arithmatex">\(\mathcal{P}(A)\)</span> 表示 <span class="arithmatex">\(A\)</span> 的幂集. 那么由于 <span class="arithmatex">\(\mathrm{Sent}_L\)</span> 是可数集，则 <span class="arithmatex">\(E\)</span> 的势不超过连续统势，合起来可知 <span class="arithmatex">\(E\)</span> 的势是连续统势. <span class="arithmatex">\(\square\)</span></p>
-<h3 id="_7"></h3>
-<h2 id="_8">命题理论集合的结构</h2>
+<h3 id="_7">完全延拓</h3>
+<div class="admonition note">
+<p class="admonition-title">定理</p>
+<p>对于语句集合 <span class="arithmatex">\(\Gamma\)</span> 和任意的命题理论 <span class="arithmatex">\(T\)</span> ，下面的结论等价：</p>
+<ol>
+<li><span class="arithmatex">\(T\)</span> 是一个完全的命题理论且 <span class="arithmatex">\(\Gamma\subseteq T\)</span> .（此时称 <span class="arithmatex">\(T\)</span> 为 <span class="arithmatex">\(\Gamma\)</span> 的完全延拓）</li>
+<li>对于 <span class="arithmatex">\(\Gamma\)</span> 的一些模型 <span class="arithmatex">\(V\)</span> ，<span class="arithmatex">\(T=\mathrm{Th}(V)\)</span> .</li>
+</ol>
+</div>
+<p>留个坑日后再证明. <span class="arithmatex">\(\square\)</span></p>
+<h2 id="_8">可公理化类</h2>
+<div class="admonition note">
+<p class="admonition-title">定义：真值指派类的理论</p>
+<p>对于任意非空真值指派<strong>类</strong> <span class="arithmatex">\(K\)</span> ，<span class="arithmatex">\(K\)</span> 的理论定义为：<br />
+$$ \mathrm{Th}(K) = \left\lbrace \psi: V(\psi)=\mathrm{T} \text{ for all } V\in K\right\rbrace $$</p>
+</div>
+<p>说白了就是将一堆真值指派归类，整体的理论就是每一个真值指派的理论的交.</p>
+<div class="admonition note">
+<p class="admonition-title">命题</p>
+<p>对于任意非空真值指派<strong>类</strong> <span class="arithmatex">\(K\)</span> ,</p>
+<ol>
+<li><span class="arithmatex">\(\mathrm{Th}(K)\)</span> 是一个相容的命题理论，并且每个 <span class="arithmatex">\(V\in K\)</span> 都是 <span class="arithmatex">\(\mathrm{Th}(K)\)</span> 的模型.</li>
+<li>如果 <span class="arithmatex">\(K\)</span> 至少有两个不同的元素，那么 <span class="arithmatex">\(\mathrm{Th}(K)\)</span> 是不完全的.</li>
+</ol>
+</div>
 <h2 id="compactness">紧性 (Compactness)</h2>
-<h3 id="pct">PCT 与有限相容</h3>
+<h3 id="pct">PCT</h3>
+<div class="admonition note">
+<p class="admonition-title">定理：命题紧性定理 (Propositional Compactness Theorem, PCT)</p>
+<p>对于任意的语句集 <span class="arithmatex">\(T\)</span> 和任意的语句 <span class="arithmatex">\(\psi\)</span> ：<span class="arithmatex">\(\Gamma\mid\!\equiv \psi\)</span> 当且仅当存在有限集 <span class="arithmatex">\(\Gamma_0 \subseteq \Gamma\)</span> ，<span class="arithmatex">\(\Gamma_0 \mid\!\equiv \psi\)</span> .</p>
+</div>
+<p>我们为了符号上的表达方便，直接引入 <span class="arithmatex">\(\Gamma\mid\!\equiv^* \psi\)</span> ，将其定义为 <span class="arithmatex">\(\Gamma\)</span> 存在有限子集 <span class="arithmatex">\(\Gamma_0\)</span> 使得 <span class="arithmatex">\(\Gamma_0\mid\!\equiv \psi\)</span> . 因此 PCT 可以简单表示为：</p>
+<div class="arithmatex">\[
+\Gamma\mid\!\equiv \psi \iff \Gamma\mid\!\equiv^* \psi
+\]</div>
+<h3 id="_9">有限相容</h3>
+<div class="admonition note">
+<p class="admonition-title">定义：有限相容</p>
+<p>一个语句集 <span class="arithmatex">\(\Gamma\)</span> 是<strong>有限相容</strong>的当且仅当其每一个有限子集 <span class="arithmatex">\(\Gamma_0\)</span> 都是相容的.</p>
+</div>
 <h3 id="apct">APCT</h3>
+<div class="admonition note">
+<p class="admonition-title">定理：APCT (Alternative Propositional Compactness Theorem)</p>
+<p>对于任意语句集 <span class="arithmatex">\(\Gamma\)</span>，如果 <span class="arithmatex">\(\Gamma\)</span> 是有限相容的，那么 <span class="arithmatex">\(\Gamma\)</span> 是相容的.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">引理</p>
+<p>对于任意语句集 <span class="arithmatex">\(\Gamma\)</span> 和任意 <span class="arithmatex">\(\psi\)</span> ：</p>
+<p><span class="arithmatex">\(\Gamma\mid\!\equiv^* \psi\)</span> 当且仅当 <span class="arithmatex">\(\Gamma\cup \left\lbrace \neg \psi \right\rbrace\)</span> 不是有限相容的.</p>
+</div>
+<h3 id="apct-pct">APCT 和 PCT 的等价性</h3>
+<p>下面考虑证明 APCT 和 PCT 的等价性.</p>
+<p>从 APCT 到 PCT ：<span class="arithmatex">\(\Gamma\mid\!\equiv \psi\)</span> 时，<span class="arithmatex">\(\Gamma\cup \left\lbrace \neg \psi \right\rbrace\)</span> 不相容，因此根据 APCT 可知它不有限相容，根据前面的引理可以知道 <span class="arithmatex">\(\Gamma\mid\!\equiv^* \psi\)</span> 成立.</p>
+<p>从 PCT 到 APCT ：<span class="arithmatex">\(\Gamma\)</span> 有限相容时，其任意有限子集都是相容的，因此对于任意 <span class="arithmatex">\(\psi\)</span> ，如果 <span class="arithmatex">\(\Gamma_0\mid\!\equiv \psi\)</span> 不成立，那么由 PCT 可知 <span class="arithmatex">\(\Gamma\mid\!\equiv \psi\)</span> 也不成立，因此 <span class="arithmatex">\(\Gamma\)</span> 是相容的. <span class="arithmatex">\(\square\)</span> </p>
+<h2 id="_10">相容、完全、有限相容的推导关系</h2>
+<div class="admonition note">
+<p class="admonition-title">命题：有限相容+完全=相容</p>
+<p>任意有限相容且完全的语句集都是相容的.</p>
+</div>
 
 
 
