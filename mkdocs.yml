@@ -2,6 +2,8 @@ site_name: xzqbear blogs
 repo_url: https://github.com/xiong-ZH-zq/xzqbear-blogs
 repo_name: xzqbear-blogs
 theme:
+  favicon: imgs/bear-svgrepo-com.svg
+  logo: imgs/bear-svgrepo-com.svg
   language: zh
   name: material
   custom_dir: overrides
