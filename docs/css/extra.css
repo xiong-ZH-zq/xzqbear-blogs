@@ -21,3 +21,8 @@ table {
 .md-typeset .admonition{
   font-size: .8rem;
 }
+
+.katex-display {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
