@@ -26,7 +26,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.expand
   font:
-    text: PT Serif
+    text: Inria Serif
   icon:
     admonition: # change icon of admonition
       example: octicons/telescope-16
@@ -55,14 +55,14 @@ markdown_extensions:
 
 plugins:
   - search:
-      separator: '[\s\u200b\-]'
+      separator: '[\s\u200b\-]'  # Enhance Chinese Search
   - callouts # transform obsidian callout to material admonition
   - glightbox
   - tags
   - ezlinks
   - mkdocs-jupyter:
       include: ["*.ipynb"]
-  - blog:
+  - blog:    # The settings of blogs
       enabled: true
       blog_dir: ./blog
       blog_toc: true
@@ -76,12 +76,12 @@ plugins:
         kwds:
           case: lower
 extra_javascript:
-  - javascripts/config.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js
+  - javascripts/config.js    # Customazation js
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
-  - css/extra.css
+  - css/extra.css    # Customazation css
 extra:
   attachments: "imgs"
