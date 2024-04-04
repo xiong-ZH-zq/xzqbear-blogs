@@ -2176,6 +2176,26 @@
 <li>证明在 <span class="arithmatex">\(\mathfrak{Q}\)</span> 中没有其他可定义的 <span class="arithmatex">\(\mathbb{Q}\)</span> 的子集.</li>
 </ol>
 </div>
+<p>(1) 以下给出四个可定义的 <span class="arithmatex">\(\mathbb{Q}\)</span> 的子集：<br />
+➀ <span class="arithmatex">\(\left\lbrace 0 \right\rbrace\)</span> ，定义它的公式为 <span class="arithmatex">\(x+x=x\)</span> .</p>
+<p>➁ 基于 ➀，可以定义常量 <span class="arithmatex">\(0\)</span> ，那么此时 <span class="arithmatex">\(\mathbb{Q}\sim\left\lbrace 0 \right\rbrace\)</span> 是可定义的，利用如下的公式：</p>
+<div class="arithmatex">\[
+\neg(x = 0)
+\]</div>
+<p>➂ <span class="arithmatex">\(\varnothing\)</span> 是可定义的，根据公式 <span class="arithmatex">\(\neg(x=x)\)</span> 即可.</p>
+<p>➃ <span class="arithmatex">\(\mathbb{Q}\)</span> 是可定义的，利用如下公式：</p>
+<div class="arithmatex">\[
+(x=0)\lor (\neg (x=0))
+\]</div>
+<p>(2) 设 <span class="arithmatex">\(\mathbb{Q}\)</span> 的某个可定义子集为 <span class="arithmatex">\(A\)</span> ，此时设存在 <span class="arithmatex">\(p\neq 0\)</span> 且 <span class="arithmatex">\(p\in A\)</span> ，由于 <span class="arithmatex">\(A\)</span> 可定义，则对于任意的自同构 <span class="arithmatex">\(\eta\)</span> 都有 <span class="arithmatex">\(A = \eta(A)\)</span> .</p>
+<p>考虑自同构 <span class="arithmatex">\(\eta_n : x\to nx,(n\neq 0 \text{ and } n\in \mathbb{Q})\)</span> （利用有理数的分配律即可证明其为自同构），此时对于 <span class="arithmatex">\(p\in A\)</span> ，必有 <span class="arithmatex">\(np\in A\)</span> ，由于对于任意的有理数 <span class="arithmatex">\(q\neq 0\)</span> ，都可以找到有理数 <span class="arithmatex">\(n = \dfrac{q}{p}\)</span> 使得 <span class="arithmatex">\(q\in A\)</span> . 因此必为以下几种情形：</p>
+<ul>
+<li>不包含元素，则 <span class="arithmatex">\(A=\varnothing\)</span>.</li>
+<li>仅包含 <span class="arithmatex">\(0\)</span> ，也就是 <span class="arithmatex">\(A = \left\lbrace 0 \right\rbrace\)</span> .</li>
+<li>不包含 <span class="arithmatex">\(0\)</span> 但包含非 <span class="arithmatex">\(0\)</span> 元素，即 <span class="arithmatex">\(A = \mathbb{Q}-\left\lbrace 0 \right\rbrace\)</span> .</li>
+<li>包含 <span class="arithmatex">\(0\)</span> 和非 <span class="arithmatex">\(0\)</span> 元素，即 <span class="arithmatex">\(A = \mathbb{Q}\)</span> .</li>
+</ul>
+<p>即 (1) 中的 <span class="arithmatex">\(4\)</span> 个可定义子集. <span class="arithmatex">\(\square\)</span></p>
 <div class="admonition question">
 <p class="admonition-title">T2</p>
 <p>一个相容理论 <span class="arithmatex">\(T\)</span> 被称为<strong>模型完全</strong> (model complete) 的，如果对于所有的 <span class="arithmatex">\(T\)</span> 的模型 <span class="arithmatex">\(\mathfrak{A}\)</span> 和 <span class="arithmatex">\(\mathfrak{B}\)</span> ，当 <span class="arithmatex">\(\mathfrak{A} \subseteq \mathfrak{B}\)</span> ，就有 <span class="arithmatex">\(\mathfrak{A}\prec \mathfrak{B}\)</span>.</p>
