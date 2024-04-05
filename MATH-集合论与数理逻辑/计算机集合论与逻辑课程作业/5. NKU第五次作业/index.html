@@ -2201,8 +2201,22 @@
 <p>一个相容理论 <span class="arithmatex">\(T\)</span> 被称为<strong>模型完全</strong> (model complete) 的，如果对于所有的 <span class="arithmatex">\(T\)</span> 的模型 <span class="arithmatex">\(\mathfrak{A}\)</span> 和 <span class="arithmatex">\(\mathfrak{B}\)</span> ，当 <span class="arithmatex">\(\mathfrak{A} \subseteq \mathfrak{B}\)</span> ，就有 <span class="arithmatex">\(\mathfrak{A}\prec \mathfrak{B}\)</span>.</p>
 <p>例如，无端点的稠密线序理论 <span class="arithmatex">\(T_{\text{(DLO)}}\)</span> 是模型完全的.</p>
 <p><span class="arithmatex">\(T\)</span> 的模型 <span class="arithmatex">\(\mathfrak{M}\)</span>  被称为 <span class="arithmatex">\(T\)</span> 的一个<strong>主模型</strong> (prime model) ，当且仅当对于 <span class="arithmatex">\(T\)</span> 的每个模型 <span class="arithmatex">\(\mathfrak{A}\)</span> ，都存在一个 <span class="arithmatex">\(\mathfrak{M}\)</span> 到 <span class="arithmatex">\(\mathfrak{A}\)</span> 的一个嵌入.</p>
-<p>证明：一个模型完全的理论有一个完全的主模型.</p>
+<p>证明：一个有主模型的模型完全理论是完全的.</p>
 </div>
+<div class="admonition bug">
+<p class="admonition-title">翻译勘误</p>
+<p>之前的问题翻译有问题，现在的才是正确的中文翻译.</p>
+</div>
+<p>设 <span class="arithmatex">\(T\)</span> 为一个有主模型的模型完全理论，其主模型为 <span class="arithmatex">\(\mathfrak{M}\)</span> ，根据完全理论的等价条件，考虑证明 <span class="arithmatex">\(T\)</span> 的任意两个模型都是初等等价的.</p>
+<p>取任意的两个模型 <span class="arithmatex">\(\mathfrak{A}\)</span> 和 <span class="arithmatex">\(\mathfrak{B}\)</span> ，此时 <span class="arithmatex">\(\mathfrak{M}\)</span> 到 <span class="arithmatex">\(\mathfrak{A}\)</span> 和 <span class="arithmatex">\(\mathfrak{B}\)</span> 均有嵌入，此时存在 <span class="arithmatex">\(\mathfrak{A}'\subseteq \mathfrak{A}\)</span> 和 <span class="arithmatex">\(\mathfrak{B}'\subseteq \mathfrak{B}\)</span> ，使得</p>
+<div class="arithmatex">\[
+\mathfrak{A}'\simeq \mathfrak{M} \simeq \mathfrak{B}'
+\]</div>
+<p>因此 <span class="arithmatex">\(\mathfrak{M}\equiv \mathfrak{A}'\equiv \mathfrak{B}'\)</span> ，而由于 <span class="arithmatex">\(T\)</span> 是模型完全的，所以 <span class="arithmatex">\(\mathfrak{A}' \prec \mathfrak{A}\)</span> ，也就有 <span class="arithmatex">\(\mathfrak{A}\equiv \mathfrak{M}\)</span> ，同理 <span class="arithmatex">\(\mathfrak{B}\equiv \mathfrak{M}\)</span> . 因此对于 <span class="arithmatex">\(T\)</span> 的任意两个模型 <span class="arithmatex">\(\mathfrak{A}\)</span> 和 <span class="arithmatex">\(\mathfrak{B}\)</span> 都有</p>
+<div class="arithmatex">\[
+\mathfrak{A} \equiv \mathfrak{B}
+\]</div>
+<p>故 <span class="arithmatex">\(T\)</span> 是完全的. <span class="arithmatex">\(\square\)</span></p>
 <div class="admonition question">
 <p class="admonition-title">T3</p>
 <p>假定一个语言 <span class="arithmatex">\(L\)</span> 仅有一个非逻辑符号 <span class="arithmatex">\(P\)</span> ，<span class="arithmatex">\(P\)</span> 为一个二元关系符号. 令 <span class="arithmatex">\(\mathfrak{A}\)</span> 为一个全域为 <span class="arithmatex">\(|\mathfrak{A}|=\mathbb{Z}\)</span> 的结构，且 <span class="arithmatex">\((a,b)\in P^\mathfrak{A}\)</span> 当且仅当 <span class="arithmatex">\(|a-b|=1\)</span> ，因此 <span class="arithmatex">\(\mathfrak{A}\)</span> 可以视为一个无穷图：<br />
