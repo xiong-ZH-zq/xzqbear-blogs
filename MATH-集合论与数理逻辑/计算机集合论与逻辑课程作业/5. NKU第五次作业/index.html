@@ -2221,13 +2221,23 @@
 <p class="admonition-title">T3</p>
 <p>假定一个语言 <span class="arithmatex">\(L\)</span> 仅有一个非逻辑符号 <span class="arithmatex">\(P\)</span> ，<span class="arithmatex">\(P\)</span> 为一个二元关系符号. 令 <span class="arithmatex">\(\mathfrak{A}\)</span> 为一个全域为 <span class="arithmatex">\(|\mathfrak{A}|=\mathbb{Z}\)</span> 的结构，且 <span class="arithmatex">\((a,b)\in P^\mathfrak{A}\)</span> 当且仅当 <span class="arithmatex">\(|a-b|=1\)</span> ，因此 <span class="arithmatex">\(\mathfrak{A}\)</span> 可以视为一个无穷图：<br />
 $$ \cdots \leftrightarrow \bullet \leftrightarrow \bullet \leftrightarrow \bullet \leftrightarrow \cdots $$<br />
-证明：存在一个初等等价的结构 <span class="arithmatex">\(\mathfrak{B}\)</span> ，且它不是<strong>连接的</strong> (connected) .</p>
+证明：存在一个初等等价的结构 <span class="arithmatex">\(\mathfrak{B}\)</span> ，且它不是<strong>连通的</strong> (connected) .</p>
 <details class="quote">
-<summary>连接 (connected)</summary>
-<p><strong>连接的</strong> 意为对于 <span class="arithmatex">\(|\mathfrak{B}|\)</span> 中的任意两个数，它们之间都存在一个路径 (path)；而从 <span class="arithmatex">\(a\)</span> 到 <span class="arithmatex">\(b\)</span> 的（长为 <span class="arithmatex">\(n\)</span> 的）路径表示一个序列 <span class="arithmatex">\(\left\langle p_0,p_1,\cdots,p_n \right\rangle\)</span> ，其中 <span class="arithmatex">\(p_0=a,p_n=b\)</span> ，并且 <span class="arithmatex">\((p_i,p_{i+1})\in P^\mathfrak{B}\)</span> 对任意 <span class="arithmatex">\(i\in \left\lbrace 0,1,\cdots,n-1 \right\rbrace.\)</span></p>
+<summary>连通 (connected)</summary>
+<p><strong>连通的</strong> 意为对于 <span class="arithmatex">\(|\mathfrak{B}|\)</span> 中的任意两个数，它们之间都存在一个路径 (path)；而从 <span class="arithmatex">\(a\)</span> 到 <span class="arithmatex">\(b\)</span> 的（长为 <span class="arithmatex">\(n\)</span> 的）路径表示一个序列 <span class="arithmatex">\(\left\langle p_0,p_1,\cdots,p_n \right\rangle\)</span> ，其中 <span class="arithmatex">\(p_0=a,p_n=b\)</span> ，并且 <span class="arithmatex">\((p_i,p_{i+1})\in P^\mathfrak{B}\)</span> 对任意 <span class="arithmatex">\(i\in \left\lbrace 0,1,\cdots,n-1 \right\rbrace.\)</span></p>
 </details>
 <p><strong>提示</strong>：加入常量符号 <span class="arithmatex">\(c\)</span> 和 <span class="arithmatex">\(d\)</span> ，并写下语句说明 <span class="arithmatex">\(c\)</span> 和 <span class="arithmatex">\(d\)</span> 相距较远 (far apart) ，利用紧性.</p>
 </div>
+<p>引入常量符号 <span class="arithmatex">\(c\)</span> 和 <span class="arithmatex">\(d\)</span> ，记 <span class="arithmatex">\(\varphi_n\)</span> 为如下的语句</p>
+<div class="arithmatex">\[
+\varphi_n = \neg\exists x_1\exists x_2\cdots \exists x_n\left(\bigwedge_{i=1}^{n-1} Px_ix_{i+1}\right)
+\]</div>
+<p>其中 <span class="arithmatex">\(x_1=c,x_n=d\)</span> ，该语句即说明不存在一个 <span class="arithmatex">\(n\)</span> 长的路径连通 <span class="arithmatex">\(c\)</span> 和 <span class="arithmatex">\(d\)</span> . 令 <span class="arithmatex">\(\Gamma = T\cup \left\lbrace \varphi_n : n \in \omega \right\rbrace\)</span> . 其中 <span class="arithmatex">\(\mathrm{Th}(\mathfrak{A})\)</span> ，考虑其有限子集：</p>
+<div class="arithmatex">\[
+\Gamma_{n_0} = T'\cup \left\lbrace \varphi_{n}: n \leqslant n_0\right\rbrace
+\]</div>
+<p>其中 <span class="arithmatex">\(T'\)</span> 为 <span class="arithmatex">\(T\)</span> 的有限子集，且对于任意的 <span class="arithmatex">\(\Gamma\)</span> 的有限子集 <span class="arithmatex">\(\Gamma'\)</span>，都存在 <span class="arithmatex">\(n_0\)</span> 使得 <span class="arithmatex">\(\Gamma' \subseteq \Gamma_{n_0}\)</span> ，此时 <span class="arithmatex">\(\Gamma_{n_0}\)</span> 也为有限语句集，由于 <span class="arithmatex">\(c\)</span> 和 <span class="arithmatex">\(d\)</span> 之间足够远，因此任意 <span class="arithmatex">\(n_0\)</span> ， <span class="arithmatex">\(\Gamma_{n_0}\)</span> 有模型. </p>
+<p>这说明 <span class="arithmatex">\(\Gamma\)</span> 的所有有限子集都有模型，即 <span class="arithmatex">\(\Gamma\)</span> 有限相容，那么根据 ACCT ，<span class="arithmatex">\(\Gamma\)</span> 也是有模型的，但是对于 <span class="arithmatex">\(\Gamma\)</span> ，若连通图为其模型，则 <span class="arithmatex">\(c,d\)</span> 连通，其路径长度必然有限，这就和 <span class="arithmatex">\(\Gamma\)</span> 中的 <span class="arithmatex">\(\left\lbrace \varphi_n:n\in \omega \right\rbrace\)</span> 矛盾，因此 <span class="arithmatex">\(\Gamma\)</span> 存在非连通图为其模型. 该非连通图 <span class="arithmatex">\(\mathfrak{B}\)</span> 即为题中所需模型. <span class="arithmatex">\(\square\)</span></p>
 
 
 
