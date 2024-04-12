@@ -3,6 +3,7 @@ comments: true
 description: 
 tags:
   - Probability Theory
+  - 数学
 date: 2024-02-20
 ---
 # Havard Stat 101 Lecture 4 - Conditional Probability

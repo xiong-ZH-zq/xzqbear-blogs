@@ -3,6 +3,7 @@ comments: true
 description: The note of Havard STAT 110 Lecture 2
 tags:
   - "Probability Theory"
+  - 数学
 date: 2024-02-18
 ---
 
