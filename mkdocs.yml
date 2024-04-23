@@ -80,9 +80,26 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js
+  - https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
   - javascripts/config.js    # Customazation js
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
   - css/extra.css    # Customazation css
 extra:
   attachments: "imgs"
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+    feedback:
+      title: 本页面内容是否对您有帮助?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: 有帮助
+          data: 1
+          note: >-
+            感谢反馈！
+        - icon: material/thumb-down-outline
+          name: 没帮助
+          data: 0
+          note: >- 
+            感谢反馈！

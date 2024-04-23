@@ -1,3 +1,5 @@
-source .venv/Scripts/activate
-pip install -r requirements.txt
+# build.sh
+sed -i 's/{\% if page.edit_url \%}/<div style="float:right"><span id="busuanzi_container_page_pv"><font size="2" color="grey">本文总阅读量<span id="busuanzi_value_page_pv"><\/span>次<\/font><\/span><\/div>{\% if page.edit_url \%}/g' mkdocs-material/material/base.html
+
+mkdocs build
 mkdocs serve
