@@ -2627,12 +2627,73 @@ $$ \alpha+ \beta = \alpha\cup \left\lbrace \alpha+ \delta \mid \delta &lt; \beta
 <p>说明如果 <span class="arithmatex">\(\gamma&gt;0\)</span> ，那么 <span class="arithmatex">\(\alpha&lt; \beta\)</span> 可推得 <span class="arithmatex">\(\gamma\cdot \alpha&lt; \gamma\cdot \beta\)</span> 且 <span class="arithmatex">\(\alpha\cdot \gamma \leqslant \beta\cdot \gamma\)</span> ，并给出一个例子说明 <span class="arithmatex">\(\leqslant\)</span> 不能替换为 <span class="arithmatex">\(&lt;\)</span> ，并证明：<br />
 $$ (\alpha \leqslant \beta \land \alpha&gt;0)\to \exists ! \delta, \xi(\xi&lt;\alpha \land \alpha\cdot \delta + \xi = \beta). $$</p>
 </div>
+<p>利用超限归纳法，对 <span class="arithmatex">\(\beta\)</span> 应用，<span class="arithmatex">\(\beta=0\)</span> 时自然成立. 归纳假设为：<span class="arithmatex">\(\alpha&lt; \beta\)</span> ，且对任意的 <span class="arithmatex">\(\delta&lt; \beta\)</span> ，均有 <span class="arithmatex">\(\gamma\cdot \alpha&lt; \gamma\cdot \delta\)</span> .</p>
+<p>当 <span class="arithmatex">\(\beta\)</span> 为后继序数时，<span class="arithmatex">\(\beta = \delta+1\)</span> ，有 <span class="arithmatex">\(\alpha \leqslant \delta\)</span> ，故</p>
+<div class="arithmatex">\[
+\gamma \cdot \alpha \leqslant \gamma\cdot \delta &lt; \gamma \cdot \delta+ \gamma\cdot 1 = \gamma \cdot ( \delta +1) = \gamma\cdot \beta 
+\]</div>
+<p>其中运用了乘法的左分配律.</p>
+<p>当 <span class="arithmatex">\(\beta\)</span> 为极限序数的时候，</p>
+<div class="arithmatex">\[
+\gamma\cdot \alpha &lt; \gamma\cdot \alpha + \gamma \cdot 1 \leqslant \sup\left\lbrace \gamma\cdot \delta ,\delta&lt; \beta \right\rbrace = \gamma\cdot \beta
+\]</div>
+<p>因此由超限归纳法可知成立. </p>
+<p>对于 <span class="arithmatex">\(\alpha \cdot \gamma \leqslant \beta \cdot \gamma\)</span> ，归纳法类似，但是在 <span class="arithmatex">\(\gamma\)</span> 充分大的时候，就会出现问题，例如 <span class="arithmatex">\(1&lt;2\)</span> ，但是</p>
+<div class="arithmatex">\[
+1\cdot \omega = \omega = 2\cdot \omega 
+\]</div>
+<p>从而等号不能去掉. </p>
+<p>对于最后的语句，<span class="arithmatex">\(\alpha=\beta\)</span> 时，取 <span class="arithmatex">\(\delta=1,\xi=0\)</span> 即可. 当 <span class="arithmatex">\(\alpha&lt; \beta\)</span> 时，考虑 <span class="arithmatex">\(\beta\)</span> 为极限序数时，<span class="arithmatex">\(\xi=0\)</span> ，当 <span class="arithmatex">\(\beta\)</span> 为后继序数时，它是一个极限序数的有限次后继，利用 T1 结论可以得出 <span class="arithmatex">\(\xi\)</span> ，因此只需讨论 <span class="arithmatex">\(\alpha\cdot \delta = \beta\)</span> ，<span class="arithmatex">\(\beta\)</span> 为极限序数的情形. 考虑利用如下的引理：</p>
+<blockquote>
+<p>对于任意序数 <span class="arithmatex">\(\alpha,\beta\)</span> 有<br />
+$$ \alpha\cdot \beta = \left\lbrace \alpha\cdot \xi + \eta \mid \xi&lt; \beta\land \eta &lt; \alpha \right\rbrace $$</p>
+</blockquote>
+<hr />
+<p><strong>引理的证明</strong>：<br />
+对 <span class="arithmatex">\(\beta\)</span> 使用超限归纳法：<span class="arithmatex">\(\beta=0\)</span> 时结论显然成立. <span class="arithmatex">\(\beta\)</span> 为后继序数时，设 <span class="arithmatex">\(\beta = \gamma+1\)</span> ，从而利用归纳假设有</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\alpha\cdot \beta &amp; = \alpha \cdot (\gamma+1) \\
+&amp; = \alpha\cdot \gamma + \alpha \\
+&amp; = \left\lbrace \alpha\cdot \xi+ \eta \mid \xi&lt; \gamma \land \eta &lt; \alpha \right\rbrace \cup \left\lbrace \alpha\cdot \gamma + \delta \mid \delta &lt; \alpha \right\rbrace \\
+&amp; = \left\lbrace \alpha\cdot \xi + \eta\mid \xi &lt; \beta \land \eta &lt; \alpha \right\rbrace
+\end{aligned}
+\]</div>
+<p>因此后继序数的情形成立.</p>
+<p><span class="arithmatex">\(\beta\)</span> 为极限序数时，有</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\alpha\cdot \beta &amp; = \bigcup_{\delta &lt; \beta, \gamma &lt; \alpha} (\alpha\cdot \delta + \gamma) \\
+&amp; = \left\lbrace \alpha\cdot \xi + \eta \mid \xi &lt; \beta\land \eta &lt; \alpha \right\rbrace
+\end{aligned}
+\]</div>
+<p>极限序数的情形成立.</p>
+<hr />
+<p>根据引理可得存在性，对于唯一性，假设有</p>
+<div class="arithmatex">\[
+\alpha\cdot \xi_1 + \eta_1 = \alpha\cdot \xi_2 + \eta_2 = \beta
+\]</div>
+<p>如果 <span class="arithmatex">\(\xi_1=\xi_2\)</span> ，那么根据加法的性质可得 <span class="arithmatex">\(\eta_1=\eta_2\)</span> . 如果 <span class="arithmatex">\(\xi_1\neq \xi_2\)</span> ，不妨设 <span class="arithmatex">\(\xi_1 &lt; \xi_2\)</span> ，那么 <span class="arithmatex">\(\xi_1 +1 \leqslant \xi_2\)</span> ，从而</p>
+<div class="arithmatex">\[
+\alpha\cdot (\xi_1+1)+ \eta_2 \leqslant \alpha\cdot \xi_2 +\eta_2 = \beta = \alpha\cdot \xi_1 + \eta_1
+\]</div>
+<p>故 <span class="arithmatex">\(\alpha+\eta_2 \leqslant \eta_1\)</span> ，这和 <span class="arithmatex">\(\eta_1 &lt; \alpha\)</span> 是矛盾的. 故唯一性成立. <span class="arithmatex">\(\square\)</span></p>
 <div class="admonition question">
 <p class="admonition-title">T3</p>
 <p>证明 Cantor 序数正则形式定理：对于每个非 <span class="arithmatex">\(0\)</span> 的序数 <span class="arithmatex">\(\alpha\)</span> ，它们均可表为如下的形式：<br />
 $$ \alpha = \omega^{\beta_1}\cdot l_1+\cdots + \omega^{\beta_n}\cdot l_n $$<br />
 其中 <span class="arithmatex">\(1 \leqslant n &lt; \omega,\alpha \geqslant \beta_1 &gt; \cdots &gt; \beta_n\)</span> ，且 <span class="arithmatex">\(1\leqslant l_i&lt; \omega,i=1,\cdots,n\)</span> ，更进一步，这个表示形式是唯一的.</p>
 </div>
+<p>对 <span class="arithmatex">\(\alpha\)</span> 使用超限归纳法，当 <span class="arithmatex">\(\alpha=1\)</span> 时，有 <span class="arithmatex">\(\alpha = \omega^0\)</span> . 对 <span class="arithmatex">\(\alpha\)</span> 为后继序数的情形，设</p>
+<div class="arithmatex">\[
+\alpha= \gamma+1 = \omega^{\beta_1}\cdot l_1+\cdots + \omega^{\beta_n}\cdot l_n +1 = \omega^{\beta_1}\cdot l_1+\cdots + \omega^{\beta_n}\cdot l_n+ \omega^0\cdot 1
+\]</div>
+<p>从而后继序数的情形成立，对于 <span class="arithmatex">\(\alpha\)</span> 为极限序数的情形，取最大的 <span class="arithmatex">\(\beta\)</span> 使得 <span class="arithmatex">\(\omega^\beta \leqslant \alpha\)</span> ，根据 T2 结论，存在唯一的 <span class="arithmatex">\(\delta\)</span> 和 <span class="arithmatex">\(\eta\)</span> 使得 <span class="arithmatex">\(\alpha = \omega^\beta\cdot \delta+ \eta\)</span> .而根据归纳假设，<span class="arithmatex">\(\eta\)</span> 可写为 Cantor 正则形式，故 <span class="arithmatex">\(\alpha\)</span> 此时可写为 Cantor 正则形式. 因此该形式的存在性成立.</p>
+<p>对于唯一性，当 <span class="arithmatex">\(\alpha = 1\)</span> 时，<span class="arithmatex">\(\alpha=\omega^0\)</span> 显然是唯一的，<span class="arithmatex">\(\alpha\)</span> 为后继序数的情形，<span class="arithmatex">\(\alpha = \gamma+1\)</span> 由归纳假设有 <span class="arithmatex">\(\gamma\)</span> 的正则形式唯一，从而 <span class="arithmatex">\(\alpha\)</span> 的正则形式唯一地为：</p>
+<div class="arithmatex">\[
+\alpha= \gamma+1 = \omega^{\beta_1}\cdot l_1+\cdots + \omega^{\beta_n}\cdot l_n +1 = \omega^{\beta_1}\cdot l_1+\cdots + \omega^{\beta_n}\cdot l_n+ \omega^0\cdot 1
+\]</div>
+<p>当 <span class="arithmatex">\(\beta_n = 0\)</span> 时，后式还可进一步写为 <span class="arithmatex">\(\omega^{\beta_1}\cdot l_1+\cdots + \omega^{\beta_n}\cdot (l_n+1)\)</span> . 因此后继序数的唯一性成立. 最后极限序数的情形，存在性的证明中，利用 T2 的结论可知 <span class="arithmatex">\(\delta\)</span> 和 <span class="arithmatex">\(\eta\)</span> 是唯一的，而 <span class="arithmatex">\(\eta\)</span> 根据归纳假设可知正则形式唯一，于是表示形式唯一. <span class="arithmatex">\(\square\)</span></p>
 
 
 
