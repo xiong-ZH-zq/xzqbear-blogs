@@ -24,7 +24,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.expand
+    # - navigation.expand
   font:
     text: Inria Serif
   icon:
