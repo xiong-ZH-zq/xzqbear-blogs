@@ -5,6 +5,10 @@ hide:
 ---
 # Home
 这里是 xzqbear 的数学笔记博客存放站，本站由 `mkdocs` 生成，现在仍然在更新当中.
+
+>[!info] 更新时间
+> 最近更新时间为 2024/08/21.
+
 ## 关于我
 
 ![profile](imgs/profile.jpg){ align=left width="200" }
